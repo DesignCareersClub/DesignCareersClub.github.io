@@ -1,0 +1,252 @@
+@import "/base.css";
+
+.page-intro {
+  width: 100vw;
+  padding: 75px var(--page-margin) 50px;
+  background-color: var(--white);
+}
+.page-intro .heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.page-intro .content {
+  margin-bottom: 50px;
+}
+.page-intro .photo {
+  height: 300px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px 10px var(--shadow);
+  background: url('/media/about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.page-intro .values-carousel {
+  padding: 50px 0 0;
+}
+.page-intro .values-carousel .values-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: calc(100vw - 2 * var(--edge-margin));
+  margin-bottom: 40px;
+}
+.page-intro .values-carousel .values-buttons .value-button {
+  width: 200px;
+  padding: 13px 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.page-intro .values-carousel .values-buttons .value-button.active, .page-intro .values-carousel .values-buttons .value-button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.page-intro .values-carousel .values-text {
+  padding: 15px 25px;
+  background-color: var(--shadow);
+}
+.page-intro .values-carousel .values-text .content {
+  margin-bottom: 0;
+}
+.page-intro .values-carousel .values-text .content:not(.active) {
+  display: none;
+}
+.page-intro .values-carousel .dot-indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  margin: auto;
+  padding: 50px 0;
+}
+.page-intro .values-carousel .dot {
+  width: 0;
+  height: 0;
+  border: 5px solid var(--shadow-darker);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+.page-intro .values-carousel .dot.active, .page-intro .values-carousel .dot:hover {
+  border: 5px solid var(--primary);
+}
+
+@media screen and (max-width: 1000px) {
+  .page-intro .values-carousel .values-buttons .value-button {
+    width: 175px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .page-intro {
+    padding-top: 25px;
+  }
+  .page-intro .photo {
+    height: 250px;
+  }
+  .page-intro .values-carousel .values-buttons {
+    justify-content: space-between;
+  }
+  .page-intro .values-carousel .values-buttons .value-button {
+    width: 140px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-intro .values-carousel .values-buttons .value-button {
+    width: 125px;
+    font-size: 15px;
+  }
+}
+
+.board-members {
+  width: 100vw;
+  padding: 75px var(--page-margin) 125px;
+  background-color: var(--black);
+}
+.board-members .heading {
+  text-align: center;
+  color: var(--white);
+}
+.board-members .zoom-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.board-members .zoom-box .zoom-portrait {
+  display: flex;
+  flex-basis: calc((100vw - (2 * var(--page-margin)) - 18px) / 3);
+  flex-direction: row;
+  margin: 3px;
+  min-width: 240px;
+  height: 14vw;
+  min-height: 140px;
+  background-color: var(--shadow);
+  cursor: pointer;
+}
+.board-members .zoom-box .zoom-portrait .name-tag {
+  display: inline-block;
+  align-self: flex-end;
+  padding: 5px 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+}
+.board-members .zoom-box .zoom-portrait .name-tag::before {
+  content: '\f131';
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 12px;
+  font-weight: 900;
+  color: #e00;
+}
+.board-members .zoom-box .zoom-portrait:hover .name-tag::before {
+  content: '\f130';
+  color: #0e0;
+}
+
+@media screen and (max-width: 1000px) {
+  .board-members {
+    padding-bottom: 100px;
+  }
+  .board-members .zoom-box .zoom-portrait {
+    min-width: 160px;
+    min-height: 105px;
+  }
+  .board-members .zoom-box .zoom-portrait .name-tag {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .board-members .zoom-box .zoom-portrait .name-tag::before, .board-members .zoom-box .zoom-portrait:hover .name-tag::before {
+    content: '';
+    width: 0;
+    margin-right: -5px;
+  }
+}
+
+.zoom-portrait#portrait-sarrah {
+  background: url('/media/board-portraits/sarrah.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.zoom-portrait#portrait-darren {
+  background: url('/media/board-portraits/darren.jpg');
+  background-size: cover;
+  background-position: center 30%;
+}
+.zoom-portrait#portrait-megan {
+  background: url('/media/board-portraits/megan.jpg');
+  background-size: cover;
+  background-position: center 25%;
+}
+.zoom-portrait#portrait-riju {
+  background: url('/media/board-portraits/riju.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.zoom-portrait#portrait-kimberly {
+  background: url('/media/board-portraits/kimberly.jpg');
+  background-size: cover;
+  background-position: center 20%;
+}
+.zoom-portrait#portrait-zeki {
+  background: url('/media/board-portraits/zeki.jpg');
+  background-size: cover;
+  background-position: top;
+}
+.zoom-portrait#portrait-aditi {
+  background: url('/media/board-portraits/aditi.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.zoom-portrait#portrait-maggie {
+  background: url('/media/board-portraits/maggie.jpg');
+  background-size: cover;
+  background-position: center 25%;
+}
+
+#modal-backdrop {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+  transition: opacity 0.1s linear;
+}
+#modal-backdrop:not(.active) {
+  opacity: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 700px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -350px;
+  border-radius: 5px;
+  background-color: var(--white);
+  opacity: 1;
+  transition: opacity 0.1s linear;
+}
+.modal:not(.active) {
+  opacity: 0;
+}

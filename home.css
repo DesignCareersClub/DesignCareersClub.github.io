@@ -1,0 +1,253 @@
+@import "/base.css";
+
+#home .navbar {
+  background-color: var(--primary);
+}
+#home .navbar .logo .logo-text {
+  color: var(--white);
+}
+#home .navbar .nav-button, #home .navbar .right-mobile .menu-button {
+  color: var(--white);
+}
+#home .navbar .nav-button:hover {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+}
+
+.home-banner {
+  height: calc(100vh - 100px - 50px);
+  padding: 100px;
+  background-color: var(--primary);
+}
+.home-banner .banner-heading {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.intro-block {
+  width: 100vw;
+  padding: 100px var(--page-margin);
+  background-color: var(--black);
+}
+.intro-block .large-heading {
+  text-align: center;
+  color: #fff;
+}
+.intro-block .content {
+  margin-bottom: 75px;
+}
+.intro-block .content p {
+  line-height: 40px;
+  color: var(--white);
+}
+.intro-block .content p a {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 500;
+  color: var(--accent);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.intro-block .content p a:hover {
+  color: var(--accent-lighter);
+}
+.intro-block .action-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.intro-block .action-bar .left, .intro-block .action-bar .right {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 0;
+  min-width: 350px;
+  padding: 0 50px;
+}
+.intro-block .action-bar .left {
+  justify-content: flex-end;
+  border-right: 1px solid var(--white);
+}
+.intro-block .action-bar .mobile-divider {
+  display: none;
+  width: 50px;
+  margin: 40px auto;
+  border-bottom: 1px solid var(--white);
+}
+.intro-block .action-bar .social-icon {
+  display: inline-block;
+  margin: 2px 25px 2px 0;
+  width: 60px;
+  cursor: pointer;
+}
+.intro-block .action-bar .social-icon svg {
+  width: 56px;
+  height: 56px;
+}
+.intro-block .action-bar .social-icon svg .solid {
+  fill: var(--accent);
+  transition: fill 0.3s ease;
+}
+.intro-block .action-bar .social-icon svg:hover .solid {
+  fill: var(--accent-lighter);
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-block .content p {
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .intro-block .action-bar .social-icon {
+    margin: 7px 12px;
+    width: 50px;
+  }
+  .intro-block .action-bar .social-icon svg {
+    width: 46px;
+    height: 46px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .intro-block {
+    padding-bottom: 75px;
+  }
+  .intro-block .content {
+    margin-bottom: 50px;
+  }
+  .intro-block .action-bar {
+    flex-direction: column;
+  }
+  .intro-block .action-bar .left, .intro-block .action-bar .right {
+    justify-content: center;
+    width: calc(100vw - 2 * var(--page-margin));
+    min-width: 0;
+    padding: 0;
+    border: none;
+  }
+  .intro-block .action-bar .mobile-divider {
+    display: inline-block;
+  }
+  .intro-block .action-bar .social-icon {
+    margin: 0 12px;
+  }
+}
+
+.events-block {
+  width: 100vw;
+  padding: 100px var(--page-margin) 75px;
+  background-color: var(--white);
+}
+.events-block .events-grid {
+  display: flex;
+  flex-direction: column;
+  margin: -25px -25px 0 0;
+}
+.events-block .events-grid .events-row {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+}
+.events-block .events-grid .event-photo {
+  flex-grow: 1;
+  width: 0;
+  height: calc(0.3 * (100vw - 2 * var(--page-margin) - 75px));
+}
+.events-block .events-grid .event-photo.left {
+  margin: 25px;
+  box-shadow: -25px 25px 0 0 var(--shadow);
+}
+.events-block .events-grid .event-photo.right {
+  margin: 25px 50px 25px 0;
+  box-shadow: 25px 25px 0 0 var(--shadow);
+}
+.events-block .events-grid .event-photo.career-fair-photo {
+  background: url('/media/career-fair-photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.events-block .events-grid .event-photo.alumni-day-photo {
+  background: url('/media/alumni-day-photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.events-block .events-grid .event-photo.unmute-unwind-photo {
+  background: url('/media/unmute-unwind-photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.events-block .events-grid .event-label {
+  flex-grow: 1;
+  width: 0;
+  padding-top: 25px;
+  background-color: transparent;
+}
+.events-block .events-grid .event-label.left {
+  margin: 25px 50px 25px 0;
+  padding-right: 50px;
+}
+.events-block .events-grid .event-label.right {
+  margin: 25px 0 25px 50px;
+  padding-left: 50px;
+}
+.events-block .events-grid .event-label .heading {
+  margin-bottom: 40px;
+}
+.events-block .events-grid .event-label .content {
+  margin-bottom: 25px;
+}
+
+.events-block .more-button {
+  margin-top: 25px;
+  text-align: center;
+}
+.events-block .more-button p {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: var(--primary);
+  cursor: pointer;
+}
+.events-block .more-button p:hover {
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary);
+}
+
+@media screen and (max-width: 1000px) {
+  .events-block .events-grid .events-row {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .events-block .events-grid .events-row:nth-child(2n+0) {
+    flex-direction: column-reverse;
+  }
+  .events-block .events-grid .event-photo {
+    width: calc(100vw - 2 * var(--page-margin) - 75px);
+    height: calc(0.6 * (100vw - 2 * var(--page-margin) - 75px));
+  }
+  .events-block .events-grid .event-photo.left, .events-block .events-grid .event-photo.right {
+    margin: 25px;
+    box-shadow: 25px 25px 0 0 var(--shadow);
+  }
+  .events-block .events-grid .event-label {
+    width: calc(100vw - 2 * var(--page-margin) - 75px);
+  }
+  .events-block .events-grid .event-label.left, .events-block .events-grid .event-label.right {
+    margin: 25px 25px 0;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .events-block {
+    padding: 50px var(--page-margin);
+  }
+  .events-block .events-grid .event-photo.left, .events-block .events-grid .event-photo.right {
+    margin: 0 25px;
+  }
+  .events-block .events-grid .event-label .heading {
+    margin-bottom: 25px;
+  }
+}

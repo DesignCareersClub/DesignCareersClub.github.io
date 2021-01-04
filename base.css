@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+:root {
+  --page-margin: 200px;
+  --primary: #0EA3C1;
+  --primary-lighter: #6EC7D9;
+  --primary-darker: #0B829A;
+  --accent: #F8D73F;
+  --accent-lighter: #F6E07F;
+  --soft-text: #5E6477;
+  --shadow: #EEE;
+  --shadow-darker: #DDD;
+  --black: #111;
+  --white: #FFF;
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    --page-margin: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  :root {
+    --page-margin: 50px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+div {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+
+.large-heading {
+  margin-bottom: 75px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+}
+.large-heading span {
+  padding-bottom: 8px;
+  border-bottom: 4px solid var(--accent);
+}
+.heading {
+  margin-bottom: 70px;
+  line-height: 50px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--black);
+}
+.heading span {
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--accent);
+}
+.preheading {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+}
+.preheading span {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.content p {
+  margin-top: 10px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--black);
+}
+.callout-button {
+  display: inline-block;
+  padding: 20px 25px 21px;
+  border-radius: 3px;
+  background-color: var(--accent);
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 0.04em;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.callout-button i {
+  font-size: 15px;
+  margin-left: 3px;
+}
+.callout-button:hover {
+  background-color: var(--accent-lighter);
+}
+.callout-button.dark {
+  padding: 18px 23px 19px;
+  border: 2px solid var(--accent-lighter);
+  background-color: transparent;
+  color: var(--accent-lighter);
+}
+.callout-button.dark:hover {
+  border: 2px solid var(--accent);
+  background-color: var(--accent);
+  color: var(--black);
+}
+
+@media screen and (max-width: 1000px) {
+  .large-heading {
+    font-size: 36px;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .preheading {
+    font-size: 19px;
+  }
+  .content p {
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .callout-button {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .large-heading {
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+  .preheading {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .large-heading {
+    font-size: 25px;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .preheading {
+    font-size: 16px;
+  }
+  .content p {
+    line-height: 28px;
+    font-size: 17px;
+  }
+  .callout-button {
+    font-size: 15px;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100px;
+  padding: 25px 100px;
+  background-color: var(--white);
+}
+.navbar .left {
+  display: inline-block;
+}
+.navbar .logo {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .logo img {
+  height: 46px;
+  margin: 2px 0;
+}
+.navbar .logo .logo-text {
+  margin: 16px 2px 0;
+  line-height: 18px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary);
+  -webkit-touch-callout: none;
+  -webkit-user-callout: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.navbar .right {
+  display: inline-block;
+  text-align: right;
+}
+.navbar .nav-button {
+  display: inline-block;
+  margin: 12px 0 12px 50px;
+  padding: 5px 0;
+  text-transform: lowercase;
+  line-height: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--soft-text);
+}
+.navbar .nav-button:hover, .navbar .nav-button.active {
+  border-bottom: 2px solid var(--black);
+  color: var(--black);
+}
+.navbar .right-mobile {
+  display: none;
+  text-align: right;
+}
+.navbar .right-mobile .menu-button {
+  display: inline-block;
+  margin: 8px 0 10px;
+  line-height: 22px;
+  font-size: 22px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.footer {
+  width: 100vw;
+  padding: 75px 100px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+.footer .heading {
+  margin-bottom: 25px;
+  color: var(--white);
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.footer .footer-content a {
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+}
+.footer .footer-content a:not(.active):hover {
+  border-bottom: 1px solid var(--white);
+}
+.footer .footer-content div {
+  width: 0;
+  margin-bottom: 25px;
+}
+.footer .footer-content .left {
+  flex-grow: 1;
+  margin-right: 75px;
+  min-width: 400px;
+}
+.footer .footer-content .middle {
+  width: 275px;
+  margin-right: 75px;
+}
+.footer .footer-content .right {
+  width: 175px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 30px 50px;
+  }
+  .navbar .logo img {
+    height: 36px;
+  }
+  .navbar .logo .logo-text {
+    margin: 12px 2px 0;
+    line-height: 15px;
+    font-size: 15px;
+  }
+  .navbar .nav-button {
+    margin: 8px 0 8px 40px;
+    line-height: 14px;
+    font-size: 14px;
+  }
+  .footer {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar .right {
+    display: none;
+  }
+  .navbar .right-mobile {
+    display: block;
+  }
+  .footer .footer-content {
+    line-height: 32px;
+    font-size: 16px;
+  }
+  .footer .footer-content .left {
+    min-width: 300px;
+    margin-right: 20px;
+  }
+  .footer .footer-content .middle {
+    width: 250px;
+    margin-right: 25px;
+  }
+  .footer .footer-content .right {
+    width: 150px;
+  }
+}
