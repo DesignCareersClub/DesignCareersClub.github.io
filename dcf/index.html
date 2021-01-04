@@ -4,6 +4,7 @@
 
   <head>
     <link rel='stylesheet' type='text/css' href='/dcf/style.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>DCF 2021 - dcc</title>
     <script src='https://kit.fontawesome.com/e442f0058d.js' crossorigin='anonymous'></script>
   </head>
@@ -36,7 +37,34 @@
         </a>
       </div>
 
+      <div class='right-mobile'>
+        <div class='menu-button' id='mobile-nav-button'>
+          <i class='fas fa-bars'></i>
+        </div>
+      </div>
+
     </div>
+
+    <div class='mobile-nav-menu' id='mobile-nav'>
+      <div class='mobile-nav-exit' id='mobile-nav-exit'>
+        <i class='fas fa-times'></i>
+      </div>
+      <div class='mobile-nav-buttons'>
+        <a class='mobile-nav-button' href='/club'>
+          the club
+        </a>
+        <a class='mobile-nav-button active' href='/dcf'>
+          career fair
+        </a>
+        <a class='mobile-nav-button' href='/alumni-day'>
+          alumni day
+        </a>
+        <a class='mobile-nav-button' href='/calendar'>
+          calendar
+        </a>
+      </div>
+    </div>
+
 
     <div class='career-fair-banner'>
       <img src='/media/dcf-banner.svg'>
@@ -70,7 +98,7 @@
           </div>
           <div class='right'>
             <div class='preheading'>
-              Fri, January 15 <br><span>11:00 AM</span>
+              Fri, January&nbsp;15 <br><span>11:00 AM</span>
             </div>
             <div class='heading'>
               <span>networking workshop</span>
@@ -90,7 +118,7 @@
         <div class='timeline-event'>
           <div class='left'>
             <div class='preheading'>
-              Fri, January 22 <br><span>11:00 AM</span>
+              Fri, January&nbsp;22 <br><span>11:00 AM</span>
             </div>
             <div class='heading'>
               <span>resume workshop</span>
@@ -118,7 +146,7 @@
           </div>
           <div class='right'>
             <div class='preheading'>
-              Fri, January 29 <br><span>11:00 AM</span>
+              Fri, January&nbsp;29 <br><span>11:00 AM</span>
             </div>
             <div class='heading'>
               <span>portfolio workshop</span>
@@ -208,7 +236,9 @@
       </div>
     </div>
 
-    <script type='text/javascript' src='/club/script.js'> </script>
+    <div id='modal-backdrop'></div>
+
+    <script type='text/javascript' src='/dcf/script.js'> </script>
 
   </body>
 

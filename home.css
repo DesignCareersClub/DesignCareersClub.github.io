@@ -137,7 +137,7 @@
 
 .events-block {
   width: 100vw;
-  padding: 100px var(--page-margin) 75px;
+  padding: 100px var(--page-margin) 50px;
   background-color: var(--white);
 }
 .events-block .events-grid {
@@ -148,7 +148,7 @@
 .events-block .events-grid .events-row {
   display: flex;
   flex-direction: row;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 .events-block .events-grid .event-photo {
   flex-grow: 1;
@@ -242,10 +242,16 @@
 
 @media screen and (max-width: 800px) {
   .events-block {
-    padding: 50px var(--page-margin);
+    padding: 40px var(--page-margin);
   }
   .events-block .events-grid .event-photo.left, .events-block .events-grid .event-photo.right {
     margin: 0 25px;
+  }
+  .events-block .events-grid .event-label {
+    width: calc(100vw - 2 * var(--page-margin));
+  }
+  .events-block .events-grid .event-label.left, .events-block .events-grid .event-label.right {
+    margin: 25px 0 0;
   }
   .events-block .events-grid .event-label .heading {
     margin-bottom: 25px;

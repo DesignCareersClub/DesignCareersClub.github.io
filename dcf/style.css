@@ -1,7 +1,7 @@
 @import "/base.css";
 
 .career-fair-banner {
-  padding: 50px 0 100px;
+  padding: 75px 0 100px;
   background: repeating-linear-gradient(
     45deg,
     #fff,
@@ -35,6 +35,14 @@
   font-weight: 900;
   color: var(--black);
 }
+@media screen and (max-width: 1200px) {
+  .career-fair-banner {
+    padding: 75px 0;
+  }
+  .career-fair-banner img {
+    width: 75vw;
+  }
+}
 @media screen and (max-width: 800px) {
   .career-fair-banner {
     padding: 25px 0 75px;
@@ -64,9 +72,10 @@
 }
 @media screen and (max-width: 800px) {
   .career-fair-intro {
-    padding: 50px var(--page-margin);
+    padding: 50px var(--page-margin) 75px;
   }
   .career-fair-intro p {
+    margin-bottom: 50px;
     line-height: 42px;
     font-size: 20px;
   }
@@ -111,13 +120,16 @@
   text-align: right;
 }
 .career-month-overview .timeline .timeline-event .heading {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  line-height: 40px;
   color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .preheading {
+  line-height: 25px;
   color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .content p {
+  margin-bottom: 25px;
   text-align: left;
   color: var(--white);
 }
@@ -158,7 +170,43 @@
     padding: 75px var(--page-margin);
   }
   .career-month-overview .large-heading {
+    margin-bottom: 40px;
+  }
+  .career-month-overview .timeline {
+    margin: 75px 0 0;
+  }
+  .career-month-overview .timeline .timeline-event {
+    height: 250px;
+  }
+  .career-month-overview .timeline .timeline-event .line {
+    height: 250px;
+  }
+  .career-month-overview .timeline .timeline-event .heading {
     margin-bottom: 25px;
+  }
+  .career-month-overview .timeline .timeline-event .heading span {
+    padding: 0;
+    border: none;
+  }
+  .career-month-overview .timeline .timeline-event .content {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .career-month-overview .timeline .timeline-event .line {
+    margin: 0 30px;
+  }
+  .career-month-overview .timeline .timeline-event .preheading {
+    line-height: 22px;
+  }
+  .career-month-overview .timeline .timeline-event .heading {
+    margin-top: 5px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .career-month-overview .timeline {
+    margin: 75px -20px;
   }
 }
 
