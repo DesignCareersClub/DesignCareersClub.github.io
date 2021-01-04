@@ -133,6 +133,9 @@
   text-align: left;
   color: var(--white);
 }
+.career-month-overview .timeline .timeline-event .content p span {
+  font-weight: 400;
+}
 .career-month-overview .timeline .timeline-event .left .content p {
   text-align: right;
 }

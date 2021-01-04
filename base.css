@@ -39,6 +39,12 @@ div {
 a {
   text-decoration: none !important;
 }
+i {
+  -webkit-touch-callout: none;
+  -webkit-user-callout: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .large-heading {
   margin-bottom: 75px;
@@ -281,6 +287,11 @@ a {
 }
 .footer .footer-content .right {
   width: 175px;
+}
+.footer .footer-content #email-copy {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1000px) {

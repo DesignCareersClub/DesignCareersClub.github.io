@@ -33,6 +33,7 @@
   background-color: var(--black);
 }
 .intro-block .large-heading {
+  white-space: nowrap;
   text-align: center;
   color: #fff;
 }
@@ -200,6 +201,7 @@
 }
 
 .events-block .more-button {
+  display: block;
   margin-top: 25px;
   text-align: center;
 }
