@@ -42,6 +42,9 @@
   .career-fair-banner img {
     width: 75vw;
   }
+  .career-fair-banner .scroll-indicator {
+    margin: 35px calc(50vw - 32px) 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .career-fair-banner {
@@ -49,9 +52,6 @@
   }
   .career-fair-banner img {
     width: calc(100vw - 2 * var(--page-margin));
-  }
-  .career-fair-banner .scroll-indicator {
-    margin: 35px calc(50vw - 32px) 0;
   }
 }
 
@@ -112,12 +112,9 @@
   height: 400px;
 }
 .career-month-overview .timeline .timeline-event .left, .career-month-overview .timeline .timeline-event .right {
-  margin-top: -5px;
+  margin-top: -20px;
   flex-basis: 200px;
   flex-grow: 1;
-}
-.career-month-overview .timeline .timeline-event .left {
-  text-align: right;
 }
 .career-month-overview .timeline .timeline-event .heading {
   margin-bottom: 40px;
@@ -125,6 +122,7 @@
   color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .preheading {
+  margin-bottom: 15px;
   line-height: 25px;
   color: var(--white);
 }
@@ -135,9 +133,6 @@
 }
 .career-month-overview .timeline .timeline-event .content p span {
   font-weight: 400;
-}
-.career-month-overview .timeline .timeline-event .left .content p {
-  text-align: right;
 }
 .career-month-overview .timeline .timeline-event .line {
   width: 6px;
@@ -181,11 +176,14 @@
   .career-month-overview .timeline .timeline-event {
     height: 250px;
   }
+  .career-month-overview .timeline .timeline-event .left{
+    text-align: right;
+  }
   .career-month-overview .timeline .timeline-event .line {
     height: 250px;
   }
   .career-month-overview .timeline .timeline-event .heading {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .career-month-overview .timeline .timeline-event .heading span {
     padding: 0;
@@ -193,6 +191,9 @@
   }
   .career-month-overview .timeline .timeline-event .content {
     display: none;
+  }
+  .career-month-overview .timeline .timeline-event .callout-button {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -209,7 +210,7 @@
 }
 @media screen and (max-width: 400px) {
   .career-month-overview .timeline {
-    margin: 75px -20px;
+    margin: 75px -20px 0;
   }
 }
 
