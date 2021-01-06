@@ -223,8 +223,15 @@
   width: calc(0.25 * (90vw - 2 * var(--page-margin) - 150px));
   vertical-align: middle;
 }
+.career-day-overview .company-box .company-logo img.white-bg {
+  padding: 15px;
+  background-color: var(--white);
+}
 .career-day-overview .company-box .company-logo img.filter-white {
   filter: invert(99%) sepia(4%) saturate(664%) hue-rotate(259deg) brightness(114%) contrast(100%);
+}
+.career-day-overview .org-call p {
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
   .career-day-overview {
