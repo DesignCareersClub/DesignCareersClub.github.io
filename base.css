@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
 @viewport {
   width: device-width;
   zoom: 1;
@@ -16,6 +17,11 @@
   --shadow-darker: #DDD;
   --black: #111;
   --white: #FFF;
+}
+@media scren and (min-width: 1600px) {
+  :root {
+    --page-margin: 300px;
+  }
 }
 @media screen and (max-width: 1200px) {
   :root {
@@ -44,6 +50,19 @@ i {
   -webkit-user-callout: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+[data-aos='fade-right'] {
+  transform: translate3d(-50px, 0, 0);
+}
+[data-aos='fade-left'] {
+  transform: translate3d(50px, 0, 0);
+}
+[data-aos='fade-up'] {
+  transform: translate3d(0, 50px, 0);
+}
+[data-aos='fade-down'] {
+  transform: translate3d(0, -50px, 0);
 }
 
 .large-heading {

@@ -5,7 +5,6 @@
   height: calc(100vh - 100px - 50px);
   min-height: 600px;
   padding: 175px var(--page-margin);
-  background-color: var(--white);
   text-align: center;
 }
 .wip-banner .large-heading {

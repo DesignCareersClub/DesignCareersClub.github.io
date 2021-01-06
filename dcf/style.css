@@ -55,38 +55,6 @@
   }
 }
 
-.career-fair-intro {
-  width: 100vw;
-  padding: 75px var(--page-margin) 100px;
-  background-color: var(--black);
-  text-align: center;
-}
-.career-fair-intro p {
-  margin-bottom: 30px;
-  text-align: left;
-  line-height: 50px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--white);
-}
-@media screen and (max-width: 800px) {
-  .career-fair-intro {
-    padding: 50px var(--page-margin) 75px;
-  }
-  .career-fair-intro p {
-    margin-bottom: 50px;
-    line-height: 42px;
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .career-fair-intro p {
-    line-height: 38px;
-    font-size: 18px;
-  }
-}
-
 .career-month-overview {
   width: 100vw;
   padding: 100px var(--page-margin);

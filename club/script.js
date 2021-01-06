@@ -49,6 +49,8 @@ function closeModal() {
   document.body.style.overflow = 'auto';
 }
 
+/**
 for (var i of zoom_portraits)
   i.addEventListener('click', activateModal);
 modal_backdrop.addEventListener('click', closeModal);
+**/

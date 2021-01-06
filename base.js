@@ -1,5 +1,11 @@
 'use strict';
 
+// animate on scroll by michalsnik
+AOS.init({
+  once: true,
+  duration: 600
+});
+
 var email_link = document.getElementById('email-link');
 var email_copy = document.getElementById('email-copy');
 email_link.addEventListener('click', () => {
