@@ -3,7 +3,8 @@
 // animate on scroll by michalsnik
 AOS.init({
   once: true,
-  duration: 600
+  offset: 50,
+  duration: 400
 });
 
 var email_link = document.getElementById('email-link');
