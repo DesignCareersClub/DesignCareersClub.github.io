@@ -85,24 +85,16 @@
   flex-grow: 1;
 }
 .career-month-overview .timeline .timeline-event .portrait {
-  padding: 25px 10px 15px;
+  padding: 25px 10px 10px;
 }
 .career-month-overview .timeline .timeline-event .left .portrait {
   text-align: right;
 }
 .career-month-overview .timeline .timeline-event .portrait img{
   flex-shrink: 1;
-  width: calc(0.4 * (100vw - 2 * var(--page-margin) - 120px));
   height: calc(0.4 * (100vw - 2 * var(--page-margin) - 120px));
-  max-width: 300px;
   max-height: 300px;
   object-fit: cover;
-}
-.career-month-overview .timeline .timeline-event .left .portrait img {
-  box-shadow: -25px -25px rgba(0, 0, 0, 0.2);
-}
-.career-month-overview .timeline .timeline-event .right .portrait img {
-  box-shadow: 25px -25px rgba(0, 0, 0, 0.2);
 }
 .career-month-overview .timeline .timeline-event .left .caption {
   text-align: right;
@@ -113,7 +105,7 @@
   font-weight: 300;
   font-size: 17px;
   color: var(--white);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .career-month-overview .timeline .timeline-event .heading {
   margin-bottom: 40px;
