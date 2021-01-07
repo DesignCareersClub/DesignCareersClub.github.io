@@ -2,7 +2,7 @@
 
 .career-fair-banner {
   padding: 75px 0 100px;
-  background: repeating-linear-gradient(
+  -background: repeating-linear-gradient(
     45deg,
     #fff,
     #fff calc(6vw + 16px),
@@ -11,7 +11,7 @@
   );
   background-position: 0 0, 50px 50px;
   background-size: calc(9vw + 24px) calc(9vw + 24px);
-  background-color: var(--black);
+  background-color: var(--white);
   text-align: center;
 }
 .career-fair-banner img {
