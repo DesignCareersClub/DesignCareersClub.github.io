@@ -5,12 +5,12 @@
   -background: repeating-linear-gradient(
     45deg,
     #fff,
-    #fff calc(6vw + 16px),
-    #f9f9f9 calc(6vw + 16px),
-    #f9f9f9 calc(12vw + 32px)
+    #fff calc(8vw + 20px),
+    #f9f9f9 calc(8vw + 20px),
+    #f9f9f9 calc(16vw + 40px)
   );
   background-position: 0 0, 50px 50px;
-  background-size: calc(9vw + 24px) calc(9vw + 24px);
+  background-size: calc(12vw + 32px) calc(12vw + 32px);
   background-color: var(--white);
   text-align: center;
 }
@@ -84,15 +84,17 @@
   flex-basis: 200px;
   flex-grow: 1;
 }
-.career-month-overview .timeline .timeline-event .portrait {
-  padding: 25px 10px 10px;
+.career-month-overview .timeline .timeline-event .right .portrait {
+  padding: 25px 0 10px 10px;
 }
 .career-month-overview .timeline .timeline-event .left .portrait {
+  padding: 25px 10px 10px 0;
   text-align: right;
 }
 .career-month-overview .timeline .timeline-event .portrait img{
   flex-shrink: 1;
   height: calc(0.4 * (100vw - 2 * var(--page-margin) - 120px));
+  max-width: calc(0.5 * (100vw - 2 * var(--page-margin) - 140px));
   max-height: 300px;
   object-fit: cover;
 }

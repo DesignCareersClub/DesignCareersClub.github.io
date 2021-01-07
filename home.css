@@ -28,10 +28,11 @@
 .home-banner .preheading {
   margin-bottom: 25px;
   text-shadow: -2px 2px #1F759B;
+  letter-spacing: 0.1em;
   color: var(--white);
 }
 .home-banner img {
-  width: 45vw;
+  width: 35vw;
 }
 .home-banner .callout-button {
   margin: 25px 0;
@@ -41,9 +42,9 @@
 .home-banner .callout-button:hover {
   background-color: var(--primary-darker);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .home-banner img {
-    width: 75vw;
+    width: 60vw;
   }
 }
 @media screen and (max-width: 800px) {
@@ -52,7 +53,7 @@
     padding: 25px 0 75px;
   }
   .home-banner img {
-    width: calc(100vw - 2 * var(--page-margin));
+    width: calc(100vw - 2 * var(--page-margin) - 50px);
   }
 }
 
