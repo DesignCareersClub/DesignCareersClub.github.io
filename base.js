@@ -4,7 +4,8 @@
 AOS.init({
   once: true,
   offset: 50,
-  duration: 400
+  duration: 400,
+  disable: 'mobile'
 });
 
 var email_link = document.getElementById('email-link');

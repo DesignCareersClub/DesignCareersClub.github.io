@@ -15,16 +15,45 @@
 }
 
 .home-banner {
-  height: calc(100vh - 100px - 50px);
-  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 100px - 50px);
   background-color: var(--primary);
-}
-.home-banner .banner-heading {
+  background-image: url('/media/topography-bg.svg');
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 60px;
-  font-weight: 600;
+}
+.home-banner .preheading {
+  margin-bottom: 25px;
+  text-shadow: -2px 2px #1F759B;
   color: var(--white);
+}
+.home-banner img {
+  width: 45vw;
+}
+.home-banner .callout-button {
+  margin: 25px 0;
+  background-color: #1F759B;
+  color: var(--white);
+}
+.home-banner .callout-button:hover {
+  background-color: var(--primary-darker);
+}
+@media screen and (max-width: 1200px) {
+  .home-banner img {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home-banner {
+    height: calc(100vh - 100px - 100px);
+    padding: 25px 0 75px;
+  }
+  .home-banner img {
+    width: calc(100vw - 2 * var(--page-margin));
+  }
 }
 
 .intro-block {
