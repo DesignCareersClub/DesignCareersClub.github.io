@@ -83,6 +83,13 @@
   margin-top: -20px;
   flex-basis: 200px;
   flex-grow: 1;
+  flex-shrink: 1;
+}
+.career-month-overview .timeline .timeline-event .left {
+  padding-right: 50px;
+}
+.career-month-overview .timeline .timeline-event .right {
+  padding-left: 50px;
 }
 .career-month-overview .timeline .timeline-event .right .portrait {
   padding: 25px 0 10px 10px;
@@ -130,7 +137,6 @@
 .career-month-overview .timeline .timeline-event .line {
   width: 6px;
   height: 450px;
-  margin: 0 50px;
   background-color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .line .circle {
@@ -175,6 +181,9 @@
   .career-month-overview .timeline .timeline-event .line {
     height: 275px;
   }
+  .career-month-overview .timeline .timeline-event .caption {
+    font-size: 16px;
+  }
   .career-month-overview .timeline .timeline-event .heading {
     margin-bottom: 15px;
   }
@@ -190,8 +199,23 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .career-month-overview .timeline .timeline-event .line {
-    margin: 0 30px;
+  .career-month-overview .timeline .timeline-event .left {
+    margin-top: -10px;
+    padding-right: 20px;
+  }
+  .career-month-overview .timeline .timeline-event .right {
+    margin-top: -10px;
+    padding-left: 20px;
+  }
+  .career-month-overview .timeline .timeline-event .portrait img{
+    flex-shrink: 1;
+    height: calc(0.4 * (100vw - 2 * var(--page-margin)));
+    max-width: calc(0.5 * (100vw - 2 * var(--page-margin)) - 20px);
+    max-height: 300px;
+    object-fit: cover;
+  }
+  .career-month-overview .timeline .timeline-event .caption {
+    font-size: 15px;
   }
   .career-month-overview .timeline .timeline-event .preheading {
     line-height: 22px;
@@ -199,6 +223,9 @@
   .career-month-overview .timeline .timeline-event .heading {
     margin-top: 5px;
     line-height: 30px;
+  }
+  .career-month-overview .timeline .timeline-event .callout-button {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 400px) {
