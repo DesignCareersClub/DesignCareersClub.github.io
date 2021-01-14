@@ -104,6 +104,7 @@
   max-width: calc(0.5 * (100vw - 2 * var(--page-margin) - 140px));
   max-height: 300px;
   object-fit: cover;
+  box-shadow: 0 0 10px 0 var(--primary-darker);
 }
 .career-month-overview .timeline .timeline-event .left .caption {
   text-align: right;
