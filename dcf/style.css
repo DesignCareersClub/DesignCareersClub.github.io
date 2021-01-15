@@ -211,7 +211,7 @@
   .career-month-overview .timeline .timeline-event .portrait img{
     flex-shrink: 1;
     height: calc(0.4 * (100vw - 2 * var(--page-margin)));
-    max-width: calc(0.5 * (100vw - 2 * var(--page-margin)) - 20px);
+    max-width: calc(0.5 * (100vw - 2 * var(--page-margin)) - 40px);
     max-height: 300px;
     object-fit: cover;
   }
