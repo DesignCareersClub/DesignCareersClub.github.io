@@ -77,7 +77,7 @@
 .career-month-overview .timeline .timeline-event {
   display: flex;
   flex-direction: row;
-  height: 450px;
+  height: 475px;
 }
 .career-month-overview .timeline .timeline-event .left, .career-month-overview .timeline .timeline-event .right {
   margin-top: -20px;
@@ -119,7 +119,7 @@
 }
 .career-month-overview .timeline .timeline-event .heading {
   margin-bottom: 40px;
-  line-height: 40px;
+  line-height: 50px;
   color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .preheading {
@@ -137,7 +137,7 @@
 }
 .career-month-overview .timeline .timeline-event .line {
   width: 6px;
-  height: 450px;
+  height: 475px;
   background-color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .line .circle {
@@ -186,7 +186,9 @@
     font-size: 16px;
   }
   .career-month-overview .timeline .timeline-event .heading {
+    line-height: 32px;
     margin-bottom: 15px;
+    font-size: 24px;
   }
   .career-month-overview .timeline .timeline-event .heading span {
     padding: 0;
