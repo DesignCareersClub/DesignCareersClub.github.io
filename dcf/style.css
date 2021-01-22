@@ -118,8 +118,9 @@
   opacity: 0.8;
 }
 .career-month-overview .timeline .timeline-event .heading {
-  margin-bottom: 40px;
+  margin: 10px 0 30px;
   line-height: 50px;
+  font-size: 28px;
   color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .preheading {
@@ -130,6 +131,7 @@
 .career-month-overview .timeline .timeline-event .content p {
   margin-bottom: 25px;
   text-align: left;
+  font-size: 18px;
   color: var(--white);
 }
 .career-month-overview .timeline .timeline-event .content p span {
@@ -188,7 +190,7 @@
   .career-month-overview .timeline .timeline-event .heading {
     line-height: 32px;
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 22px;
   }
   .career-month-overview .timeline .timeline-event .heading span {
     padding: 0;
@@ -256,6 +258,7 @@
 
 .career-day-overview .company-box {
   display: flex;
+  flex-basis: 10%;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -268,8 +271,10 @@
   margin: 0;
 }
 .career-day-overview .company-box .company-logo {
+  height: 75px;
   margin: 50px 50px 0 0;
   white-space: nowrap;
+  text-align: center;
 }
 .career-day-overview .company-box .company-logo .padder {
   display: inline-block;
@@ -282,6 +287,8 @@
   vertical-align: middle;
 }
 .career-day-overview .company-box .company-logo img.white-bg {
+  min-width: 120px;
+  width: calc(0.25 * (90vw - 2 * var(--page-margin) - 150px) - 30px);
   padding: 15px;
   background-color: var(--white);
 }
@@ -308,14 +315,31 @@
   }
   .career-day-overview .company-box {
     margin: 40px 0;
-    padding: 0 0 50px 50px;
+    padding: 10px 10px 50px 50px;
+  }
+  .career-day-overview .company-box .company-logo {
+    height: 60px;
+    margin: 40px 40px 0 0;
   }
   .career-day-overview .company-box .company-logo img {
     min-width: 100px;
+  }
+  .career-day-overview .company-box .company-logo img.white-bg {
+    min-width: 70px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
+  .career-day-overview .company-box {
+    padding: 10px 10px 40px 40px;
+  }
+  .career-day-overview .company-box .company-logo {
+    height: 40px;
+    margin: 30px 30px 0 0;
+  }
   .career-day-overview .company-box .company-logo img {
-    min-width: 100px;
+    min-width: 70px;
+  }
+  .career-day-overview .company-box .company-logo img.white-bg {
+    min-width: 40px;
   }
 }
