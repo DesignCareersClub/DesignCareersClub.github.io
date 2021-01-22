@@ -286,10 +286,12 @@
   width: calc(0.25 * (90vw - 2 * var(--page-margin) - 150px));
   vertical-align: middle;
 }
-.career-day-overview .company-box .company-logo img.white-bg {
+.career-day-overview .company-box .company-logo img.scale-down, .career-day-overview .company-box .company-logo img.white-bg {
   min-width: 120px;
   width: calc(0.25 * (90vw - 2 * var(--page-margin) - 150px) - 30px);
   padding: 15px;
+}
+.career-day-overview .company-box .company-logo img.white-bg {
   background-color: var(--white);
 }
 .career-day-overview .company-box .company-logo img.filter-white {
@@ -324,8 +326,9 @@
   .career-day-overview .company-box .company-logo img {
     min-width: 100px;
   }
-  .career-day-overview .company-box .company-logo img.white-bg {
-    min-width: 70px;
+  .career-day-overview .company-box .company-logo img.scale-down, .career-day-overview .company-box .company-logo img.white-bg {
+    min-width: 80px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -339,7 +342,7 @@
   .career-day-overview .company-box .company-logo img {
     min-width: 70px;
   }
-  .career-day-overview .company-box .company-logo img.white-bg {
-    min-width: 40px;
+  .career-day-overview .company-box .company-logo img.scale-down, .career-day-overview .company-box .company-logo img.white-bg {
+    min-width: 50px;
   }
 }
