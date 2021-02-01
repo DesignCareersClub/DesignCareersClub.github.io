@@ -59,6 +59,7 @@
   width: 100vw;
   padding: 100px var(--page-margin);
   background: linear-gradient(to bottom, var(--primary), var(--primary-darker));
+  text-align: center;
 }
 .career-month-overview .large-heading {
   margin-bottom: 50px;
@@ -69,15 +70,40 @@
   text-align: center;
   color: var(--white);
 }
+.career-month-overview .content p.old {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+.career-month-overview .reveal-button {
+  display: inline-block;
+  margin: 40px auto 0;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+}
+.career-month-overview .reveal-button:hover {
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--white);
+}
+.career-month-overview .reveal-button i {
+  font-size: 16px;
+}
 .career-month-overview .timeline {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 100px 0 0;
+  text-align: left;
 }
 .career-month-overview .timeline .timeline-event {
   display: flex;
   flex-direction: row;
   height: 475px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .career-month-overview .timeline .timeline-event .left, .career-month-overview .timeline .timeline-event .right {
   margin-top: -20px;
@@ -252,10 +278,58 @@
   margin: 50px 0;
   text-align: center;
 }
-.career-day-overview .content span {
+.career-day-overview .content p {
+  font-size: 18px;
+}
+.career-day-overview .content p span {
   font-weight: 500;
 }
 
+.career-day-overview .speakers {
+  display: flex;
+  flex-direction: column;
+}
+.career-day-overview .speakers .preheading {
+  margin-bottom: 20px;
+}
+.career-day-overview .speakers .portrait {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.career-day-overview .speakers .portrait .image {
+  min-width: 250px;
+  height: 250px;
+}
+.career-day-overview .speakers .portrait .image#leo {
+  background: url('/media/dcf/leo-jiacheng-yang.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.career-day-overview .speakers .portrait .image#shaun {
+  background: url('/media/dcf/shaun-tai.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.career-day-overview .speakers .portrait .description {
+  flex-grow: 1;
+  margin-left: 15px;
+  padding: 25px 40px;
+  background-color: var(--shadow);
+}
+.career-day-overview .speakers .portrait .description .preheading {
+  margin-bottom: 0;
+}
+.career-day-overview .speakers .portrait .description p {
+  margin-bottom: 0;
+}
+.career-day-overview .speakers .portrait .description .time {
+  font-weight: 400;
+}
+
+.career-day-overview .preheading.company-preheading {
+  margin: 50px 0 20px;
+}
 .career-day-overview .company-box {
   display: flex;
   flex-basis: 10%;
@@ -263,7 +337,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: calc(100vw - 2 * var(--page-margin));
-  margin: 50px 0;
+  margin: 0 0 50px;
   padding: 25px 25px 75px 75px;
   background-color: var(--black);
 }
@@ -314,6 +388,12 @@
 @media screen and (max-width: 800px) {
   .career-day-overview {
     padding: 75px var(--page-margin) 50px;
+  }
+  .career-day-overview .speakers .portrait {
+    flex-direction: column;
+  }
+  .career-day-overview .speakers .portrait .description {
+    margin-left: 0;
   }
   .career-day-overview .company-box {
     margin: 40px 0;
