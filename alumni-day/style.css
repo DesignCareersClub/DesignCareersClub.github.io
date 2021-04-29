@@ -1,12 +1,166 @@
 @import "/base.css";
 
-.wip-banner {
-  width: 100vw;
-  height: calc(100vh - 100px - 50px);
-  min-height: 600px;
-  padding: 175px var(--page-margin);
-  text-align: center;
+:root {
+  --light: #E6F5F7;
+  --midtone: #439CBF;;
+  --dark:  #233870;
+  --ad_accent: #F79441;
 }
-.wip-banner .large-heading {
-  margin-bottom: 25px;
+
+@font-face {
+  font-family: "SemplicitaPro";
+  src: url("/alumni-day/SemplicitaPro.otf") format("otf"),
+    url("/alumni-day/SemplicitaPro-Bold.otf") format("otf"),
+    url("/alumni-day/SemplicitaPro-Semibold.otf") format("otf"); 
 }
+
+.main{
+  padding: 50px var(--page-margin);
+  
+}
+
+.content p{
+  font-family: "SemplicitaPro", sans-serif;
+  font-weight:600; 
+  font-size: 16px;
+  line-height: 19px;
+  color: black; 
+}
+
+.heading {
+  font-family: Futura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--dark);
+}
+
+.heading span{
+  color: var(--ad_accent); 
+  border-bottom: none; 
+}
+
+.heading .fas, .heading .far{
+  font-size: 70px;
+  width: 100px; 
+  text-align: center; 
+  margin-right: 30px; 
+}
+
+.info .heading{
+  margin-bottom: 20px; 
+
+}
+
+.info .content p{
+  margin-left: 130px; 
+  margin-bottom: 100px; 
+}
+
+.divider{
+  border-top: 4px solid var(--midtone); 
+  margin: 50px 0; 
+}
+
+.divider .mini_divider{
+  height: 9px; 
+  width: 100px; 
+  background-color: var(--midtone);
+
+}
+
+.subheading{
+  font-family: Futura;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--dark); 
+  text-transform: uppercase; 
+}
+
+.subheading span{
+  color: var(--ad_accent); 
+
+}
+
+.FAQ{
+  display: flex; 
+  flex-direction: row; 
+  padding: 50px var(--page-margin); 
+  background-color: var(--light); 
+}
+
+.FAQ .left, .FAQ .right{
+  flex-grow: 1; 
+  width: 200px; 
+}
+
+.FAQ .heading{
+  margin-bottom: 30px; 
+}
+
+.FAQ .question{
+  margin-bottom: 30px; 
+}
+.FAQ .question h3{
+  font-family: Futura, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--dark); 
+}
+
+
+.FAQ .right .picture{
+  width: calc(0.7 * (50vw - var(--page-margin)));
+  height: calc(0.8 * (50vw - var(--page-margin)));
+  margin-left: 30px; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-white-lines-pink-background-image_269454.jpg"); 
+}
+
+.main_upcoming_event{
+  background-color: var(--dark); 
+  border-radius: 10px; 
+  padding: 40px; 
+  margin: 10px 0; 
+
+}
+
+.schedule .callout-button{
+  background-color: var(--ad_accent); 
+  text-transform: uppercase; 
+  font-family: Futura; 
+  font-size: 16px; 
+  color: white;  
+  height: 50px; 
+  padding-top: 15px; 
+  
+}
+
+.schedule .callout_wrapper{
+  height: 50px; 
+  margin-bottom: -50px; 
+  text-align: right; 
+}
+
+.main .main_upcoming_event .subheading{
+  color: var(--light); 
+  margin-bottom: 40px; 
+}
+
+.main .main_upcoming_event .content p{
+  color: white; 
+  margin-right: 150px; 
+}
+
+
+
+
+
+
+
+
+
+
