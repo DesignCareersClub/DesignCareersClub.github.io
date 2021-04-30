@@ -21,9 +21,10 @@
   --midtone: #439CBF;;
   --dark:  #233870;
   --ad_accent: #F79441;
+  --ad_accent_darker: #D67320;
 }
 
-:not(.footer) .heading {
+.heading {
   font-family: Futura;
   font-style: normal;
   font-weight: bold;
@@ -55,7 +56,7 @@
   color: var(--ad_accent);
 }
 
-:not(.footer) .content p {
+.content p {
   font-family: "SemplicitaPro", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -89,12 +90,16 @@
 #alumni-day .navbar .right-mobile .menu-button {
   color: var(--white);
 }
+#alumni-day .footer {
+  background-color: var(--dark);
+}
 
 .banner {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 100px);
+  padding-top: calc(50vh - 200px);
   background-image: url('/media/alumni-day/banner-background.svg');
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   text-align: center;
 }
 .banner img {
@@ -114,7 +119,7 @@
 }
 
 .schedule {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .schedule .heading {
   margin-bottom: 80px;
@@ -127,11 +132,15 @@
 .schedule .callout-button{
   height: 50px;
   padding-top: 15px;
+  border-radius: 5px;
   background-color: var(--ad_accent);
   text-transform: uppercase;
   font-family: Futura;
   font-size: 16px;
   color: #fff;
+}
+.schedule .callout-button:hover {
+  background-color: var(--ad_accent_darker);
 }
 .schedule .highlighted-event{
   margin: 10px 0 50px;
@@ -164,7 +173,7 @@
   margin-right: 50px;
 }
 .schedule .highlighted-event .alumni .alumni-portrait {
-  background-color: #f00;
+  background-color: #eee;
   height: auto;
   margin-bottom: 25px;
 }
@@ -224,7 +233,7 @@
 .other-event .alumni-portrait {
   flex-grow: 1;
   width: 50px;
-  background-color: #f00;
+  background-color: #eee;
   height: auto;
   margin-bottom: 10px;
 }
@@ -237,22 +246,50 @@
   padding-top: 100%;
 }
 
+.alumni-portrait#alex {
+  background-image: url('/media/alumni-day/alex-kim.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.alumni-portrait#shang {
+  background-image: url('/media/alumni-day/shang-lu.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.alumni-portrait#isabella {
+  background-image: url('/media/alumni-day/isabella-sheier.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.alumni-portrait#prerna {
+  background-image: url('/media/alumni-day/prerna-dudani.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.alumni-portrait#danielle {
+  background-image: url('/media/alumni-day/danielle-macedo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.alumni-portrait#marissa {
+  background-image: url('/media/alumni-day/marissa-meier.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .FAQ {
   display: flex;
   flex-direction: row;
-  padding: 50px calc(var(--page-margin) + 50px);
+  padding: 50px calc(var(--page-margin) + 50px) 100px;
   background-color: var(--light);
 }
-
 .FAQ .left, .FAQ .right {
   flex-grow: 1;
   width: 200px;
 }
-
 .FAQ .heading{
   margin-bottom: 30px;
 }
-
 .FAQ .question{
   margin-bottom: 30px;
 }
@@ -263,8 +300,6 @@
   line-height: 27px;
   color: var(--dark);
 }
-
-
 .FAQ .right .picture{
   width: calc(0.65 * (50vw - var(--page-margin)));
   height: calc(0.8 * (50vw - var(--page-margin)));
