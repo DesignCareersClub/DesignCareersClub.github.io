@@ -73,6 +73,22 @@
   background-color: var(--midtone);
 }
 
+#alumni-day .navbar {
+  background-color: var(--dark);
+}
+#alumni-day .navbar .logo .logo-text {
+  color: var(--white);
+}
+#alumni-day .navbar .nav-button {
+  color: var(--white);
+}
+#alumni-day .navbar .nav-button:hover, #alumni-day .navbar .nav-button.active {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+}
+#alumni-day .navbar .right-mobile .menu-button {
+  color: var(--white);
+}
 
 .banner {
   height: calc(100vh - 200px);
@@ -89,26 +105,26 @@
   padding: 50px var(--page-margin);
 }
 
-.main .info .heading {
+.info .heading {
   margin-bottom: 25px;
 }
-.main .info .content p {
+.info .content p {
   margin-left: 130px;
   margin-bottom: 100px;
 }
 
-.main .schedule {
+.schedule {
   margin-bottom: 100px;
 }
-.main .schedule .heading {
+.schedule .heading {
   margin-bottom: 80px;
 }
-.main .schedule .callout_wrapper{
+.schedule .callout_wrapper{
   height: 50px;
   margin-bottom: -50px;
   text-align: right;
 }
-.main .schedule .callout-button{
+.schedule .callout-button{
   height: 50px;
   padding-top: 15px;
   background-color: var(--ad_accent);
@@ -118,7 +134,7 @@
   color: #fff;
 }
 .schedule .highlighted-event{
-  margin: 10px 0;
+  margin: 10px 0 50px;
   padding: 40px;
   border-radius: 10px;
   background-color: var(--dark);
@@ -144,30 +160,81 @@
   width: 100px;
   text-align: center;
 }
-.highlighted-event .alumni:not(:last-child) {
+.schedule .highlighted-event .alumni:not(:last-child) {
   margin-right: 50px;
 }
-.highlighted-event .alumni .alumni-portrait {
+.schedule .highlighted-event .alumni .alumni-portrait {
   background-color: #f00;
   height: auto;
   margin-bottom: 25px;
 }
-.highlighted-event .alumni .alumni-portrait::before {
+.schedule .highlighted-event .alumni .alumni-portrait::before {
   content: '';
   display: block;
   padding-top: 100%;
 }
-.highlighted-event .alumni-name {
+.schedule .highlighted-event .alumni-name {
   color: var(--light);
   font-family: SemplicitaPro, sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
-.highlighted-event .alumni-title, .highlighted-event .alumni-company {
+.schedule .highlighted-event .alumni-title, .highlighted-event .alumni-company {
   color: var(--midtone);
   font-family: SemplicitaPro, sans-serif;
   font-size: 18px;
   font-weight: 600;
+}
+
+.schedule .other-events {
+  display: flex;
+  flex-direction: row;
+}
+.other-events .event {
+  flex-grow: 1;
+  width: 100px;
+}
+.other-events .event:not(:last-child) {
+  margin-right: 50px;
+}
+.other-events .event .subheading {
+  color: var(--midtone);
+}
+.other-events .event .other-event {
+  margin: 10px 0;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: var(--light);
+}
+.event .other-event .subheading {
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+.other-event .content {
+  margin-bottom: 40px;
+}
+.other-event .content p {
+  color: var(--dark);
+}
+.other-event .speakers {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+.other-event .alumni-portrait {
+  flex-grow: 1;
+  width: 50px;
+  background-color: #f00;
+  height: auto;
+  margin-bottom: 10px;
+}
+.other-event .alumni-portrait:not(:last-child) {
+  margin-right: 25px;
+}
+.other-event .alumni-portrait::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
 }
 
 .FAQ {
