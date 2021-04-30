@@ -28,7 +28,7 @@
   font-family: Futura;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 48px;
   color: var(--dark);
 }
@@ -38,17 +38,17 @@
 }
 .heading .fas, .heading .far {
   position: relative;
-  top: 10px;
+  top: 15px;
   width: 100px;
   margin-right: 30px;
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .subheading{
   font-family: Futura;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--dark);
   text-transform: uppercase;
 }
@@ -103,7 +103,7 @@
   text-align: center;
 }
 .banner img {
-  width: 50vw;
+  width: 40vw;
 }
 
 .main {
@@ -119,12 +119,12 @@
 }
 
 .schedule {
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 .schedule .heading {
   margin-bottom: 80px;
 }
-.schedule .callout_wrapper{
+.schedule .callout-wrapper{
   height: 50px;
   margin-bottom: -50px;
   text-align: right;
