@@ -280,10 +280,13 @@
 }
 
 .what-to-expect {
-  padding: 50px var(--page-margin);
-  margin-top: -50px;
+  height: 100vw;
+  padding: calc(5vw + 50px) var(--page-margin) 50px;
+  margin-top: calc(-5vw - 50px);
   background-image: url('/media/alumni-day/what-to-expect-background.svg');
   background-size: cover;
+  background-position: center -8vw;
+  background-repeat: no-repeat;
 }
 .what-to-expect .heading {
   margin-bottom: 25px;
