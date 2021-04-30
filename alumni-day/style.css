@@ -64,6 +64,20 @@
   color: black;
 }
 
+.callout-button{
+  height: 50px;
+  padding-top: 15px;
+  border-radius: 5px;
+  background-color: var(--ad_accent);
+  text-transform: uppercase;
+  font-family: Futura;
+  font-size: 16px;
+  color: #fff;
+}
+.callout-button:hover {
+  background-color: var(--ad_accent_darker);
+}
+
 .divider{
   border-top: 4px solid var(--midtone);
   margin: 50px 0;
@@ -103,7 +117,8 @@
   text-align: center;
 }
 .banner img {
-  width: 40vw;
+  width: 45vw;
+  margin-bottom: 40px;
 }
 
 .main {
@@ -128,19 +143,6 @@
   height: 50px;
   margin-bottom: -50px;
   text-align: right;
-}
-.schedule .callout-button{
-  height: 50px;
-  padding-top: 15px;
-  border-radius: 5px;
-  background-color: var(--ad_accent);
-  text-transform: uppercase;
-  font-family: Futura;
-  font-size: 16px;
-  color: #fff;
-}
-.schedule .callout-button:hover {
-  background-color: var(--ad_accent_darker);
 }
 .schedule .highlighted-event{
   margin: 10px 0 50px;
@@ -276,6 +278,21 @@
   background-size: cover;
   background-position: center;
 }
+
+.what-to-expect {
+  padding: 50px var(--page-margin);
+  margin-top: -50px;
+  background-image: url('/media/alumni-day/what-to-expect-background.svg');
+  background-size: cover;
+}
+.what-to-expect .heading {
+  margin-bottom: 25px;
+}
+.what-to-expect .content p {
+  margin-left: 130px;
+  margin-bottom: 100px;
+}
+
 
 .FAQ {
   display: flex;
