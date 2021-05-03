@@ -88,6 +88,24 @@
   background-color: var(--midtone);
 }
 
+@media screen and (max-width: 1000px) {
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .content p {
+    font-size: 14px;
+  }
+}
+
 #alumni-day .navbar {
   background-color: var(--dark);
 }
