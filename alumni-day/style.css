@@ -341,12 +341,12 @@
   background-size: cover;
   background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-white-lines-pink-background-image_269454.jpg");
 }
-.showing{
+/* .showing{
   display: block; 
 }
 .hidden{
   display: none; 
-}
+} */
 @media screen and (max-width: 1000px) {
 
   .heading {
