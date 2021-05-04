@@ -66,18 +66,20 @@
     </div>
 
     <div class='banner'>
-      <img src='/media/alumni-day/banner-text.svg' alt='Alumni Days'>
+      <img src='/media/alumni-day/banner-text.svg' alt='Alumni Days' data-aos='fade-in' data-aos-duration='800'>
       <br />
-      <div class='callout-button'>
-        sign up
-      </div>
+      <a href='#schedule'>
+        <div class='callout-button' data-aos='fade-in' data-aos-duration='800'>
+          sign up
+        </div>
+      </a>
     </div>
 
     <div class="main">
 
-      <div class="info"> 
+      <div class="info" data-aos='fade-in'>
         <h2 class="heading">
-          <i class="fas fa-graduation-cap"></i>A Celebration of UC Davis Design
+          <i class="fas fa-graduation-cap"></i>A Celebration of UC&nbsp;Davis&nbsp;Design
         </h2>
         <div class="content">
           <p>The Design Careers Club is excited to announce our 2021 Virtual Alumni Fridays this Spring Quarter! Starting Friday, May 7th, we will be hosting three alumni day events every Friday. We have invited various UC Davis Design alumni from different Design fields to discuss their profession and allow students to engage and ask questions.
@@ -85,35 +87,37 @@
         </div>
       </div>
 
-      <div class="divider">
+      <div class="divider" data-aos='fade-in'>
         <div class="mini_divider"></div>
       </div>
 
-      <div class="schedule">
-        <h2 class="heading"><i class="far fa-calendar"></i> Schedule ｜ <span>Featured Alumni</span></h2>
-        <h3 class="subheading">Upcoming: <span>Friday 5/7</span></h3>
-        <div class="highlighted-event">
+      <div class="schedule" id='schedule'>
+        <h2 class="heading" data-aos='fade-in'><i class="far fa-calendar"></i> Schedule ｜ <span>Featured Alumni</span></h2>
+
+        <h3 class="subheading" data-aos='fade-in'>Upcoming: <span>Friday 5/7</span></h3>
+        <div class="highlighted-event" data-aos='fade-in'>
           <div class="callout-wrapper">
-            <div class="callout-button">Sign Up</div>
+            <a href='https://ucdavis.zoom.us/j/96230743930' target='_blank'>
+              <div class="callout-button">Sign Up</div>
+            </a>
           </div>
           <h2 class="subheading">Designing for Tech</h2>
           <div class="content">
             <p>Come learn about the Tech industry from UC Davis Design alumni that currently work at Tech companies. Learn about their career path and gain valuable connections!
             </p>
           </div>
-
           <div class='speakers'>
+            <div class='alumni'>
+              <div class='alumni-portrait' id='emily'></div>
+              <div class='alumni-name'>Emily Lin</div>
+              <div class='alumni-title'>Product Designer</div>
+              <div class='alumni-company'>DocuSign</div>
+            </div>
             <div class='alumni'>
               <div class='alumni-portrait' id='alex'></div>
               <div class='alumni-name'>Alex Kim</div>
               <div class='alumni-title'>Senior Product Designer</div>
               <div class='alumni-company'>Apple</div>
-            </div>
-            <div class='alumni'>
-              <div class='alumni-portrait' id='bethany'></div>
-              <div class='alumni-name'>Bethany Tinklenberg</div>
-              <div class='alumni-title'>Product Management</div>
-              <div class='alumni-company'>PlayStation</div>
             </div>
             <div class='alumni'>
               <div class='alumni-portrait' id='shang'></div>
@@ -122,42 +126,50 @@
               <div class='alumni-company'>Amazon</div>
             </div>
           </div>
-
+          <a class='alt-button' href='https://ucdavis.zoom.us/j/96230743930' target='_blank'>
+            <div class="callout-button">Sign Up</div>
+          </a>
         </div>
 
-        <div class="other-events">
+        <div class="other-events" data-aos='fade-in'>
 
           <div class="event">
             <h2 class="subheading">Friday, 5/14</h2>
             <div class="other-event">
-              <h2 class="subheading">Designing for<br />Nonprofits</h2>
+              <h2 class="subheading">Designing for Nonprofits</h2>
               <div class="content">
                 <p>Come learn about designing for a nonprofit from UC Davis Design alumni that currently work at nonprofit organizations.
                 </p>
               </div>
               <div class='speakers'>
-                <div class='alumni-portrait' id='rokaya'></div>
                 <div class='alumni-portrait' id='isabella'></div>
                 <div class='alumni-portrait' id='prerna'></div>
+                <div class='alumni-portrait'></div>
               </div>
-              <div class="callout-button">See Details</div>
+              <div class="callout-button detail-button" data-target='nonprofits'>See Details</div>
+              <a class='alt-button' href='https://ucdavis.zoom.us/j/91384917908' target='_blank'>
+                <div class="callout-button">Sign Up</div>
+              </a>
             </div>
           </div>
 
           <div class="event">
             <h2 class="subheading">Friday, 5/21</h2>
             <div class="other-event">
-              <h2 class="subheading">Designing for<br />Creative&nbsp;Agencies</h2>
+              <h2 class="subheading">Designing for Creative&nbsp;Agencies</h2>
               <div class="content">
                 <p>Come learn about designing for an agency from UC Davis Design alumni that currently work at creative agencies.
                 </p>
               </div>
               <div class='speakers'>
-                <div class='alumni-portrait' id='danielle'></div>
-                <div class='alumni-portrait' id='sean'></div>
                 <div class='alumni-portrait' id='marissa'></div>
+                <div class='alumni-portrait' id='danielle'></div>
+                <div class='alumni-portrait' id='jeremy'></div>
               </div>
-              <div class="callout-button">See Details</div>
+              <div class="callout-button detail-button" data-target='agencies'>See Details</div>
+              <a class='alt-button' href='https://ucdavis.zoom.us/j/94036688920' target='_blank'>
+                <div class="callout-button">Sign Up</div>
+              </a>
             </div>
 
           </div>
@@ -165,17 +177,47 @@
         </div>
       </div>
 
-      <div class="divider">
+      <div class="divider" data-aos='fade-in'>
         <div class="mini_divider"></div>
       </div>
 
     </div>
 
     <div class="what-to-expect">
-      <h2 class="heading"> <i class="fas fa-desktop"></i>What to Expect ｜ <span>A Virtual Event</span></h2>
-      <div class="content">
-        <p>Join us from 12:00 PM – 2:00 PM on Fridays this month to hear UC Davis alumni share their experience transitioning into a workplace, participate in Q&A panels and breakout sessions
+      <h2 class="heading" data-aos='fade-in'>
+        <i class="fas fa-desktop"></i>What to Expect ｜ <span>A Virtual Event</span>
+      </h2>
+      <div class="content" data-aos='fade-in'>
+        <p>
+          Join us from 12:00 PM – 2:00 PM on Fridays this month to hear UC Davis alumni share their experience transitioning into a workplace, participate in Q&A panels and breakout sessions, and more!
         </p>
+      </div>
+
+      <div class='float float-1' data-aos='fade-right'>
+        <div class='subheading'>Intros 12:00 - 12:10</div>
+        <div class='content'>
+          <p>
+            A brief introduction and presentation from the Design Careers Club board
+          </p>
+        </div>
+      </div>
+
+      <div class='float float-2' data-aos='fade-left'>
+        <div class='subheading'>Panels 12:10 - 12:30</div>
+        <div class='content'>
+          <p>
+            A 20-minute panel discussion where each alumni will introduce themselves and answer some questions about their career journey and industry
+          </p>
+        </div>
+      </div>
+
+      <div class='float float-3' data-aos='fade-right'>
+        <div class='subheading'>Networking 12:30 - 2:00</div>
+        <div class='content'>
+          <p>
+            20-minute rotating breakout sessions in small groups where you will be able to meet each alumni, hear about their work, ask questions, get feedback on your resume/portfolio, and gain valuable connections
+          </p>
+        </div>
       </div>
     </div>
 
@@ -208,7 +250,7 @@
           </div>
         </div>
       </div>
-      <div class="right">
+      <div class="right" data-aos='fade-in' data-aos-duration='800' data-aos-delay='100'>
         <div class="picture"></div>
       </div>
 
@@ -237,6 +279,80 @@
           <a href='/'>Design Careers Club</a><br>
           @ UC Davis<br>
           <a href='#'>⌃ back to top</a>
+        </div>
+      </div>
+    </div>
+
+    <div class='modal' id='nonprofits'>
+      <div class="callout-wrapper">
+        <a href='https://ucdavis.zoom.us/j/91384917908' target='_blank'>
+          <div class="callout-button">Sign Up</div>
+        </a>
+      </div>
+      <h2 class="subheading">Designing for Nonprofits</h2>
+      <div class="content">
+        <p>
+          On Friday, May 14th, we will be hosting our “Alumni Fridays: Designing for Nonprofit” event! During this event, you will gain insight from alumni who work at Nonprofit organizations, learn about their individual career paths, and also gain valuable connections!
+        </p>
+        <p>
+          Our special guests will be Isabella Scheier, a Design Assistant at Nonprofit Resources, LLC, and Prerna Dudani, a Service and Experience Designer at Kaiser Permanente!
+        </p>
+      </div>
+      <div class='speakers'>
+        <div class='alumni'>
+          <div class='alumni-portrait' id='isabella'></div>
+          <div class='alumni-name'>Isabella Scheier</div>
+          <div class='alumni-title'>Design Assistant</div>
+          <div class='alumni-company'>Nonprofit Resources, LLC</div>
+        </div>
+        <div class='alumni'>
+          <div class='alumni-portrait' id='prerna'></div>
+          <div class='alumni-name'>Prerna Dudandi</div>
+          <div class='alumni-title'>Service & Experience Designer</div>
+          <div class='alumni-company'>Kaiser Permanente</div>
+        </div>
+        <div class='alumni'>
+          <div class='alumni-portrait'></div>
+          <div class='alumni-name'></div>
+          <div class='alumni-title'></div>
+          <div class='alumni-company'></div>
+        </div>
+      </div>
+    </div>
+
+    <div class='modal' id='agencies'>
+      <div class="callout-wrapper">
+        <a href='https://ucdavis.zoom.us/j/91384917908' target='_blank'>
+          <div class="callout-button">Sign Up</div>
+        </a>
+      </div>
+      <h2 class="subheading">Designing for Creative&nbsp;Agencies</h2>
+      <div class="content">
+        <p>
+          On Friday, May 21st, we will be hosting our “Alumni Fridays: Designing for Creative Agency” event! During this event, you will gain insight from alumni who work at Creative Agencies, learn about their individual career paths, and also gain valuable connections!
+        </p>
+        <p>
+          Our special guests will be Danielle Macedo, a Junior Art Director at ELA Advertising, Jeremy Dang, a Designer at Mixte Communications, and Marissa Meier, a Graphic Designer at Crooked Media!
+        </p>
+      </div>
+      <div class='speakers'>
+        <div class='alumni'>
+          <div class='alumni-portrait' id='marissa'></div>
+          <div class='alumni-name'>Marissa Meier</div>
+          <div class='alumni-title'>Graphic Designer</div>
+          <div class='alumni-company'>Crooked Media</div>
+        </div>
+        <div class='alumni'>
+          <div class='alumni-portrait' id='danielle'></div>
+          <div class='alumni-name'>Danielle Macedo</div>
+          <div class='alumni-title'>Junior Art Director</div>
+          <div class='alumni-company'>ELA Advertising</div>
+        </div>
+        <div class='alumni'>
+          <div class='alumni-portrait' id='jeremy'></div>
+          <div class='alumni-name'>Jeremy Dang</div>
+          <div class='alumni-title'>Designer</div>
+          <div class='alumni-company'>Mixte Communications</div>
         </div>
       </div>
     </div>

@@ -25,11 +25,11 @@
 }
 
 .heading {
-  font-family: Futura;
+  font-family: Futura, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  line-height: 48px;
+  line-height: 40px;
   color: var(--dark);
 }
 .heading span {
@@ -78,10 +78,6 @@
   background-color: var(--ad_accent_darker);
 }
 
-.callout-button_two{
-  visibility: hidden; 
-}
-
 .divider{
   border-top: 4px solid var(--midtone);
   margin: 50px 0;
@@ -91,6 +87,57 @@
   width: 100px;
   background-color: var(--midtone);
 }
+
+@media screen and (max-width: 1000px) {
+  .heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .heading .fas, .heading .far {
+    width: 80px;
+    font-size: 50px;
+    margin-right: 25px;
+    top: 10px;
+  }
+  .subheading{
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 15px;
+  }
+  .info .content p, .what-to-expect .content p {
+    margin-left: 105px;
+  }
+  .callout-button{
+    height: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .heading {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .heading .fas, .heading .far {
+    display: none;
+  }
+  .subheading{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .subheading{
+    font-size: 16px;
+  }
+}
+
 
 #alumni-day .navbar {
   background-color: var(--dark);
@@ -125,6 +172,30 @@
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+  .banner img {
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner {
+    height: calc(80vh - 100px);
+  }
+  .banner img {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner img {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner img {
+    width: 85vw;
+  }
+}
+
 .main {
   padding: 50px var(--page-margin);
 }
@@ -135,6 +206,11 @@
 .info .content p {
   margin-left: 130px;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 800px) {
+  .info .content p {
+    margin-left: 0;
+  }
 }
 
 .schedule {
@@ -154,6 +230,10 @@
   border-radius: 10px;
   background-color: var(--dark);
 }
+.schedule .highlighted-event .alt-button {
+  margin-top: 25px;
+  display: none;
+}
 .schedule .highlighted-event .subheading {
   color: var(--light);
   margin-bottom: 40px;
@@ -165,60 +245,51 @@
   color: var(--light);
   margin-right: 150px;
 }
-
 .schedule .highlighted-event .speakers {
   display: flex;
   flex-direction: row;
 }
-.schedule .highlighted-event .alumni {
+.schedule .highlighted-event .speakers .alumni {
   flex-grow: 1;
   width: 100px;
   text-align: center;
 }
-.schedule .highlighted-event .alumni:not(:last-child) {
+.schedule .highlighted-event .speakers .alumni:not(:last-child) {
   margin-right: 50px;
 }
-.schedule .highlighted-event .alumni .alumni-portrait {
-  background-color: #eee;
+.schedule .highlighted-event .speakers .alumni .alumni-portrait {
   height: auto;
   margin-bottom: 25px;
 }
-.schedule .highlighted-event .alumni .alumni-portrait::before {
+.schedule .highlighted-event .speakers .alumni .alumni-portrait::before {
   content: '';
   display: block;
   padding-top: 100%;
 }
-.schedule .highlighted-event .alumni-name {
+.schedule .highlighted-event .speakers .alumni .alumni-name {
   color: var(--light);
   font-family: SemplicitaPro, sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
-.schedule .highlighted-event .alumni-title, .highlighted-event .alumni-company {
+.highlighted-event .speakers .alumni .alumni-title, .highlighted-event .speakers .alumni .alumni-company {
   color: var(--midtone);
   font-family: SemplicitaPro, sans-serif;
   font-size: 18px;
   font-weight: 600;
+  white-space: nowrap;
 }
-
 .schedule .other-events {
   display: flex;
   flex-direction: row;
+}
+.schedule .other-events .alt-button {
+  display: none;
 }
 .other-events .event {
   flex-grow: 1;
   width: 100px;
 }
-
-/* .other-events_overlay{
-  position: absolute;
-  background-color: rgba(0,0,0,0.5);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-} */
 .other-events .event:not(:last-child) {
   margin-right: 50px;
 }
@@ -249,7 +320,6 @@
 .other-event .alumni-portrait {
   flex-grow: 1;
   width: 50px;
-  background-color: #eee;
   height: auto;
   margin-bottom: 10px;
 }
@@ -262,6 +332,101 @@
   padding-top: 100%;
 }
 
+@media screen and (max-width: 1000px) {
+  .schedule {
+    margin-bottom: 100px;
+  }
+  .schedule .heading {
+    margin-bottom: 60px;
+  }
+  .schedule .highlighted-event .content p {
+    margin-right: 100px;
+  }
+  .schedule .highlighted-event .speakers .alumni .alumni-name {
+    font-size: 16px;
+  }
+  .schedule .highlighted-event .speakers .alumni .alumni-title, .highlighted-event .alumni-company {
+    font-size: 14px;
+  }
+  .other-events .event {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .other-event .alumni-portrait {
+    display: none;
+  }
+  .other-event .content {
+    margin-bottom: -10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .schedule {
+    margin-bottom: 80px;
+  }
+  .schedule .heading {
+    margin-bottom: 40px;
+  }
+  .schedule .highlighted-event .callout-wrapper, .schedule .other-events .detail-button {
+    display: none;
+  }
+  .schedule .highlighted-event .alt-button, .schedule .other-events .alt-button {
+    display: inline-block;
+  }
+  .schedule .highlighted-event .content {
+    margin-bottom: 25px;
+  }
+  .schedule .highlighted-event .speakers .alumni:not(:last-child) {
+    margin-right: 25px;
+  }
+  .schedule .highlighted-event .speakers .alumni .alumni-portrait {
+    margin-bottom: 15px;
+  }
+  .schedule .highlighted-event .speakers .alumni .alumni-name {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .schedule .highlighted-event .speakers .alumni .alumni-title {
+    display: none;
+  }
+  .schedule .highlighted-event .speakers .alumni .alumni-company {
+    font-size: 12px;
+  }
+  .schedule .highlighted-event .subheading, .event .other-event .subheading {
+    margin-bottom: 20px;
+  }
+  .schedule .other-events {
+    flex-direction: column;
+  }
+  .other-events .event:not(:last-child) {
+    margin-right: 0;
+  }
+  .other-event .alumni-portrait {
+    display: block;
+  }
+  .other-event .content {
+    margin-bottom: 25px;
+  }
+  .schedule .highlighted-event .content p {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .schedule .highlighted-event .speakers .alumni:not(:last-child) {
+    margin-right: 15px;
+  }
+  .schedule .highlighted-event .speakers .alumni .alumni-name, .schedule .highlighted-event .speakers .alumni .alumni-company {
+    display: none;
+  }
+  .other-event .alumni-portrait:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.alumni-portrait#emily {
+  background-image: url('/media/alumni-day/emily-lin.jpg');
+  background-size: cover;
+  background-position: center;
+}
 .alumni-portrait#alex {
   background-image: url('/media/alumni-day/alex-kim.jpg');
   background-size: cover;
@@ -282,19 +447,24 @@
   background-size: cover;
   background-position: center;
 }
-.alumni-portrait#danielle {
-  background-image: url('/media/alumni-day/danielle-macedo.jpg');
-  background-size: cover;
-  background-position: center;
-}
 .alumni-portrait#marissa {
   background-image: url('/media/alumni-day/marissa-meier.jpg');
   background-size: cover;
   background-position: center;
 }
+.alumni-portrait#danielle {
+  background-image: url('/media/alumni-day/danielle-macedo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.alumni-portrait#jeremy {
+  background-image: url('/media/alumni-day/jeremy-dang.png');
+  background-size: cover;
+  background-position: center;
+}
 
 .what-to-expect {
-  height: 100vw;
+  min-height: 100vw;
   padding: calc(5vw + 50px) var(--page-margin) 50px;
   margin-top: calc(-5vw - 50px);
   background-image: url('/media/alumni-day/what-to-expect-background.svg');
@@ -306,8 +476,77 @@
   margin-bottom: 25px;
 }
 .what-to-expect .content p {
+  height: 0;
   margin-left: 130px;
-  margin-bottom: 100px;
+  font-size: 18px;
+}
+.what-to-expect .float .subheading {
+  color: var(--ad_accent);
+  margin-bottom: 15px;
+}
+.what-to-expect .float .content p {
+  height: auto;
+  margin: 0;
+  font-weight: 700;
+}
+.what-to-expect .float-1 {
+  max-width: 27vw;
+  margin-top: 27vw;
+  margin-bottom: 5vw;
+}
+.what-to-expect .float-2 {
+  max-width: 30vw;
+  margin-left: 45vw;
+  margin-bottom: 5vw;
+}
+.what-to-expect .float-3 {
+  max-width: 30vw;
+}
+@media screen and (max-width: 1200px) {
+  .what-to-expect {
+    padding: 50px var(--page-margin);
+    margin-top: -50px;
+  }
+  .what-to-expect .float-1 {
+    margin-top: 30vw;
+    margin-bottom: 0;
+  }
+  .what-to-expect .float-2 {
+    margin-left: 51vw;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .what-to-expect .content p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .what-to-expect {
+    background: none;
+    min-height: inherit;
+    padding-bottom: 100px;
+  }
+  .what-to-expect .content p {
+    height: auto;
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .what-to-expect .float-1 {
+    max-width: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+  }
+  .what-to-expect .float-2 {
+    max-width: none;
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+  .what-to-expect .float-3 {
+    max-width: none;
+    margin-right: 100px;
+  }
 }
 
 .FAQ {
@@ -320,13 +559,13 @@
   flex-grow: 1;
   width: 200px;
 }
-.FAQ .heading{
+.FAQ .heading {
   margin-bottom: 30px;
 }
-.FAQ .question{
+.FAQ .question {
   margin-bottom: 30px;
 }
-.FAQ .question h3{
+.FAQ .question h3 {
   font-family: Futura, sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -336,126 +575,100 @@
 .FAQ .right .picture{
   width: calc(0.65 * (50vw - var (--page-margin)));
   height: calc(0.8 * (50vw - var(--page-margin)));
-  margin-left: 50px;
+  margin-left: 75px;
   background-position: center;
   background-size: cover;
-  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-white-lines-pink-background-image_269454.jpg");
+  background-image: url("/media/alumni-day/photobooth.jpg");
+  box-shadow: 25px 25px 0 0 var(--dark);
 }
-/* .showing{
-  display: block; 
-}
-.hidden{
-  display: none; 
-} */
+
 @media screen and (max-width: 1000px) {
-
-  .heading {
-    font-size: 24px;
+  .FAQ .right {
+    display: none;
   }
-
-  .content p {
-    font-size: 15px;
-  }
-
-  .subheading{
-    font-size: 20px; 
-  }
-
-  .schedule .other-events {
-
-    flex-direction: column;
-  }
-
-  .other-events .event {
-    width: 600px;
-  }
-
-  .FAQ .right{
-    display: none; 
-  }
-
 }
-
-@media screen and (max-width: 800px){
-  .heading{
-    font-size: 18px; 
+@media screen and (max-width: 800px) {
+  .FAQ .question h3 {
+    font-size: 18px;
   }
-  .subheading{
-    font-size: 16px; 
-  }
-  .heading .far, .heading .fas{
-    top: 10px; 
-    font-size: 40px; 
-  }
-  .schedule .other-events {
-
-    flex-direction: column;
-  }
-
-  .other-events .event {
-    width: 450px;
-  }
-
-  .schedule .highlighted-event .content p {
-    margin-right: 0;
-  }
-
-  .FAQ .right{
-    display: none; 
-  }
-
 }
-
-
 @media screen and (max-width: 600px) {
-  .content p {
-    font-size: 14px;
+  .FAQ {
+    padding: 50px var(--page-margin);
   }
-  .heading{
-    font-size: 15.1px; 
+  .FAQ .question h3 {
+    font-size: 16px;
   }
-  .subheading{
-    font-size: 14px; 
-  }
- .heading .far, .heading .fas{
-    top: 2px; 
-  }
-  .alumni-portrait{
-    width: 75px; 
-  }
-  .schedule .highlighted-event .alumni-title, .highlighted-event .alumni-company{
-    font-size: 16px; 
-  }
-  .schedule .other-events {
+}
 
-    flex-direction: column;
-  }
+.modal {
+  display: none;
+  position: fixed;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -400px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: var(--light);
+  opacity: 1;
+  z-index: 3;
+  overflow-y: scroll;
+  transition: opacity 0.1s linear;
+}
+.modal:not(.active) {
+  opacity: 0;
+}
 
-  .other-events .event {
-    width: 400px;
-  }
-
-  .what-to-expect .content p {
-    margin-left: 230px;
-    font-size: 14px;
-  }
-  .what-to-expect .i{
-    font-size: 10px; 
-  }
-
-  .divider{
-    border-top: 4px solid var(--midtone);
-    margin: 5px 0;
-  }
-
-
-  .schedule .highlighted-event .content p {
-    margin-right: 0;
-  }
-  .FAQ .heading{
-    font-size: 20px; 
-  }
-  .FAQ .right{
-    display: none; 
-  }
+.modal .callout-wrapper{
+  height: 50px;
+  margin-bottom: -50px;
+  text-align: right;
+}
+.modal .subheading {
+  color: var(--dark);
+  margin-bottom: 40px;
+}
+.modal .content {
+  margin-bottom: 50px;
+}
+.modal .content p {
+  color: var(--dark);
+  margin-right: 150px;
+}
+.modal .speakers {
+  display: flex;
+  flex-direction: row;
+}
+.modal .speakers .alumni {
+  flex-grow: 1;
+  width: 100px;
+  text-align: center;
+}
+.modal .speakers .alumni:not(:last-child) {
+  margin-right: 50px;
+}
+.modal .speakers .alumni .alumni-portrait {
+  height: auto;
+  margin-bottom: 25px;
+}
+.modal .speakers .alumni .alumni-portrait::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.modal .speakers .alumni .alumni-name {
+  color: var(--dark);
+  font-family: SemplicitaPro, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.modal .alumni .alumni-title, .modal .alumni .alumni-company {
+  color: var(--midtone);
+  font-family: SemplicitaPro, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
 }
