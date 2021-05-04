@@ -15,6 +15,11 @@
   font-weight: 700;
   src: url("/alumni-day/SemplicitaPro-Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: Futura;
+  font-weight: 700;
+  src: url("/alumni-day/Futura-Bold.ttf") format("truetype");
+}
 
 :root {
   --light: #E6F5F7;
@@ -27,7 +32,7 @@
 .heading {
   font-family: Futura, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   line-height: 40px;
   color: var(--dark);
