@@ -167,7 +167,8 @@
 .banner {
   height: calc(100vh - 100px);
   padding-top: calc(50vh - 200px);
-  background-image: url('/media/alumni-day/banner-background.svg');
+  background-image: url('/media/alumni-day/bannerbg-animated.webp'),
+                    url('/media/alumni-day/bannerbg-static.svg');
   background-size: cover;
   background-position: center;
   text-align: center;
