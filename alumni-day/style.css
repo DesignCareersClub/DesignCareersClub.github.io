@@ -296,6 +296,9 @@
   flex-grow: 1;
   width: 100px;
 }
+.other-events .event.past {
+  filter: grayscale(50%);
+}
 .other-events .event:not(:last-child) {
   margin-right: 50px;
 }
@@ -308,6 +311,7 @@
   border-radius: 10px;
   background-color: var(--light);
 }
+
 .event .other-event .subheading {
   color: var(--dark);
   margin-bottom: 20px;
@@ -433,13 +437,18 @@
   background-size: cover;
   background-position: center;
 }
-.alumni-portrait#alex {
-  background-image: url('/media/alumni-day/alex-kim.jpg');
+.alumni-portrait#sean {
+  background-image: url('/media/alumni-day/sean-harold.jpg');
   background-size: cover;
   background-position: center;
 }
 .alumni-portrait#shang {
   background-image: url('/media/alumni-day/shang-lu.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.alumni-portrait#cj {
+  background-image: url('/media/alumni-day/cj-paghasian.jpg');
   background-size: cover;
   background-position: center;
 }
