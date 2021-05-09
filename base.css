@@ -18,7 +18,7 @@
   --black: #111;
   --white: #FFF;
 }
-@media scren and (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   :root {
     --page-margin: 300px;
   }
