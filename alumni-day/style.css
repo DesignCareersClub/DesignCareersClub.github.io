@@ -296,9 +296,6 @@
   flex-grow: 1;
   width: 100px;
 }
-.other-events .event.past {
-  filter: grayscale(50%);
-}
 .other-events .event:not(:last-child) {
   margin-right: 50px;
 }
@@ -310,6 +307,12 @@
   padding: 40px;
   border-radius: 10px;
   background-color: var(--light);
+}
+.other-events .event.past .subheading {
+  filter: grayscale(50%);
+}
+.other-events .event.past .other-event {
+  background-color: var(--shadow);
 }
 
 .event .other-event .subheading {
@@ -438,7 +441,7 @@
   background-position: center;
 }
 .alumni-portrait#sean {
-  background-image: url('/media/alumni-day/sean-harold.jpg');
+  background-image: url('/media/alumni-day/sean-harold.png');
   background-size: cover;
   background-position: center;
 }
@@ -502,7 +505,6 @@
 .what-to-expect .float .content p {
   height: auto;
   margin: 0;
-  font-weight: 700;
 }
 .what-to-expect .float-1 {
   max-width: 27vw;
