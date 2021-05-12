@@ -637,10 +637,13 @@
   opacity: 0;
 }
 
-.modal .callout-wrapper{
+.modal .callout-wrapper {
   height: 50px;
   margin-bottom: -50px;
   text-align: right;
+}
+.modal .callout-wrapper .callout-button {
+  margin-top: -10px;
 }
 .modal .subheading {
   color: var(--dark);
