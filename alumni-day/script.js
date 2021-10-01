@@ -33,3 +33,6 @@ function closeModal() {
 for (var i of detail_buttons)
   i.addEventListener('click', activateModal);
 modal_backdrop.addEventListener('click', closeModal);
+
+
+
