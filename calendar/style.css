@@ -11,12 +11,16 @@
   margin-bottom: 25px;
 }
 
+
+.iframe-wrapper{
+  text-align: center; 
+}
+
+
 .calendar{
   text-align: center; 
   width: 100%; 
-
 }
 
-iframe{
-  width: 200px; 
-}
+
+
