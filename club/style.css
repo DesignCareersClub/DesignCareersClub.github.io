@@ -113,11 +113,20 @@
 }
 
 .board-members {
+  display: flex;
   width: 100vw;
-  padding: 75px var(--page-margin) 125px;
-  background-color: var(--black);
+  /* padding: 0px var(--page-margin) 125px; */
+  padding: 0px 50px 100px 50px;
+  background-color: white;
+  justify-content: center;
 }
-.board-members .heading {
+
+.board-members img{
+  width: 100vw;
+  /* min-width: 300px; */
+}
+
+/* .board-members .heading {
   text-align: center;
   color: var(--white);
 }
@@ -222,7 +231,7 @@
   background: url('/media/board-portraits/maggie.jpg');
   background-size: cover;
   background-position: center 25%;
-}
+} */
 
 .modal {
   display: none;
