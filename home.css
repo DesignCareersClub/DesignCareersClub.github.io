@@ -97,7 +97,7 @@
 .intro-block {
   width: 100vw;
   padding: 100px var(--page-margin);
-  background-color: var(--black);
+  background-color: var(--primary);
 }
 .intro-block .large-heading {
   white-space: nowrap;
