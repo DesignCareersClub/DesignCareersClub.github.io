@@ -1,0 +1,37 @@
+
+#construction-section {
+    margin: 100px 100px;
+}
+
+#construction {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#construction-title{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+#cal-btn-div {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#cal-btn {
+    padding: 15px 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+
+}
