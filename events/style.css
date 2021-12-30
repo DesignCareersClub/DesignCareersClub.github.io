@@ -35,3 +35,36 @@
     border-radius: 10px;
 
 }
+
+
+
+
+/* .main {
+    padding: 75px 100px;
+} */
+
+#upcoming-meetings {
+    padding: 75px 100px;
+}
+
+#past-meetings {
+    background-color: var(--primary);
+    padding: 75px 100px;
+}
+
+.quarter {
+    margin: 20px 0 40px 0;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+
+.past-meeting {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
