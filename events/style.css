@@ -41,16 +41,85 @@
 /* .main {
     padding: 75px 100px;
 } */
-
+/* code for upcoming meetings */
 #upcoming-meetings {
-    padding: 75px 100px;
+    margin: 75px 170px;
 }
+
+#upcoming-meetings h2 {
+    margin: auto auto 50px auto;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    width: 335px;
+    line-height: 60px;
+    border-bottom: 5px #FADC25 solid;
+}
+
+.upcoming-meeting {
+    margin-bottom: 100px;
+}
+
+.upcoming-meeting h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+}
+
+.upcoming-event-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 35px 0px;
+}
+
+.upcoming-btns-text {
+    width: 75%;
+}
+
+.upcoming-btns-text p {
+    margin: 10px 0px 40px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.upcomingBtns {
+    margin-right: 15px;
+    background-color: #C8EAF0;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.icon-content {
+    width: 200px;
+}
+
+.eventsInfo {
+    display: flex;
+    margin: 15px 0;
+}
+
+.eventsIcons{
+    max-width: 20px;
+    max-height: 20px;
+    margin-left: 10px;
+}
+
+.eventsInfo p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 0px 18px;
+}
+
+
+
+
+/* code for past meetings */
 
 #past-meetings {
     background-color: var(--primary);
     padding: 75px 100px;
 }
-
 
 .quarter {
     margin: 20px 0 40px 0;
@@ -70,9 +139,11 @@
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 36px;
-    width: 220px;
+    font-weight: 600;
+    width: 240px;
     line-height: 60px;
     border-bottom: 5px #FADC25 solid;
+    color: white;
 }
 
 .past-type {
