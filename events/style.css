@@ -108,6 +108,8 @@
 
 .eventsInfo p {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /* font-style: italic; */
     margin: 0px 0px 0px 18px;
 }
 
