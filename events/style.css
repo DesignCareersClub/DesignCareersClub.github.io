@@ -51,6 +51,7 @@
     padding: 75px 100px;
 }
 
+
 .quarter {
     margin: 20px 0 40px 0;
     display: grid;
@@ -58,17 +59,20 @@
     gap: 50px;
 }
 
-article {
+#past-meetings article {
     background-color: white;
     padding: 20px 40px 40px 40px;
     border-radius: 10px;
 }
 
 #past-meetings h2 {
-    margin-bottom: 50px;
+    margin: auto auto 50px auto;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 36px;
+    width: 220px;
+    line-height: 60px;
+    border-bottom: 5px #FADC25 solid;
 }
 
 .past-type {
