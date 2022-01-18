@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
-@media screen and (max-width: 500px) {
-    #quarter {
-        grid-template-columns: none;
-    }
-
-    .past-meetings {
-        padding: 75px 75px;
-    }
-}
 
 #construction-section {
     margin: 100px 100px;
@@ -202,3 +193,37 @@ section a {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 800px) {
+    .quarter {
+        grid-template-columns: none;
+        display: block;
+    }
+
+    .past-meetings {
+        padding: 75px 75px;
+    }
+
+    .quarter article {
+        margin: 20px 10px;
+    }
+
+    .past-type {
+        text-align: left;
+    }
+
+    .past-title{
+        font-size: 24px;
+    }
+
+    #upcoming-meetings {
+        margin: 75px 15px;
+    }
+
+    .upcoming-meetings h3{
+        font-size: 24px;
+    }
+
+    .upcoming-event-content{
+        display: block;
+    }
+}
