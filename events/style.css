@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
+@media screen and (max-width: 500px) {
+    #quarter {
+        grid-template-columns: none;
+    }
+
+    .past-meetings {
+        padding: 75px 75px;
+    }
+}
+
 #construction-section {
     margin: 100px 100px;
 }
@@ -112,9 +122,6 @@
     /* font-style: italic; */
     margin: 0px 0px 0px 18px;
 }
-
-
-
 
 /* code for past meetings */
 
