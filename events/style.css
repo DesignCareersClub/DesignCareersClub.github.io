@@ -216,9 +216,10 @@ section a {
     }
 
     #upcoming-meetings {
-        margin: 75px 30px;
+        margin: 75px auto;
+        padding-left: 30px;
+        padding-right: 30px;
         display: block;
-        justify-content: center;
     }
 
     .upcoming-meetings h3{
