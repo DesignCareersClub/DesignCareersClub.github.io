@@ -55,7 +55,7 @@
   color: var(--white);
 }
 .home-banner img {
-  width: 25vw;
+  width: 30vw;
   box-shadow: 0 0 10px 0 var(--primary-darker);
 }
 .home-banner .callout-button {
@@ -65,9 +65,10 @@
 .home-banner .callout-button:hover {
   background-color: var(--primary-darker);
 }
+
 @media screen and (max-width: 1000px) {
   .home-banner img {
-    width: 35vw;
+    width: 40vw;
   }
   .home-banner .banner-group .right {
     min-width: 300px;
@@ -75,7 +76,7 @@
 }
 @media screen and (max-width: 600px) {
   .home-banner {
-    height: calc(100vh - 100px - 50px);
+    height: 750px;
     padding: 25px 0 75px;
   }
   .home-banner .banner-group {
@@ -90,7 +91,8 @@
     margin-bottom: 0;
   }
   .home-banner img {
-    width: calc(0.4 * (100vh - 300px));
+    width: calc(0.5 * (100vh - 300px));
+    margin-top: 70px;
   }
 }
 
