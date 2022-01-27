@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
 
-#construction-section {
+/* #construction-section {
     margin: 100px 100px;
 }
 
@@ -36,8 +36,7 @@
     text-decoration: none;
     color: white;
     border-radius: 10px;
-
-}
+} */
 
 /* .main {
     padding: 75px 100px;
@@ -60,6 +59,13 @@
 
 .upcoming-meeting {
     margin-bottom: 100px;
+    display: flex;
+}
+
+.upcoming-image {
+    width: 30%;
+    height: 30%;
+    margin-right: 40px;
 }
 
 .upcoming-meeting h3{
@@ -68,13 +74,12 @@
 }
 
 .upcoming-event-content {
-    display: flex;
     justify-content: space-between;
     margin: 20px 0px 35px 0px;
 }
 
 .upcoming-btns-text {
-    width: 75%;
+    width: 100%;
 }
 
 .upcoming-btns-text p {
@@ -93,12 +98,13 @@
 }
 
 .icon-content {
-    width: 200px;
+    display: flex;
+    margin: 15px 0;;
 }
 
 .eventsInfo {
     display: flex;
-    margin: 15px 0;
+    margin: 0 20px 0 0;
 }
 
 .eventsIcons{
@@ -193,7 +199,7 @@ section a {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .quarter {
         grid-template-columns: none;
         display: block;
@@ -222,6 +228,15 @@ section a {
         display: block;
     }
 
+    .upcoming-image {
+        width: 75%;
+        margin: auto;
+    }
+
+    .upcoming-meeting {
+        display: block;
+    }
+    
     .upcoming-meetings h3{
         font-size: 24px;
     }
@@ -229,4 +244,15 @@ section a {
     .upcoming-event-content{
         display: block;
     }
+
+    .icon-content{
+        display: block;
+    }
+
+    .eventsInfo {
+        display: flex;
+        margin: 15px 20px;
+    }
+
+
 }

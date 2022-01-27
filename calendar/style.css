@@ -13,10 +13,35 @@
 
 
 .iframe-wrapper{
-  margin: 50px 0 50px 0;
+  margin: 10px 0 50px 0;
   text-align: center; 
 }
 
+
+#add-cal-btn-div {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 0 var(--page-margin);
+  display: flex;
+  justify-content: right;
+}
+
+#add-cal-btn {
+  padding: 10px 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  background-color: #C8EAF0;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+} 
+
+#add-cal-btn:hover {
+  cursor: pointer;
+  background-color: #81b8c2;
+}
 
 /* .calendar{
   text-align: center; 
