@@ -24,6 +24,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
+  padding-top: 30px;
 }
 .home-banner .preheading {
   margin-bottom: 25px;
@@ -55,7 +56,7 @@
   color: var(--white);
 }
 .home-banner img {
-  width: 40vw;
+  width: 30vw;
   box-shadow: 0 0 10px 0 var(--primary-darker);
 }
 .home-banner .callout-button {
@@ -68,7 +69,7 @@
 
 @media screen and (max-width: 1000px) {
   .home-banner img {
-    width: 50vw;
+    width: 35vw;
   }
   .home-banner .banner-group .right {
     min-width: 300px;
