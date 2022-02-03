@@ -153,6 +153,13 @@
 .group-label a {
     background-color: white;
     color: #00A6C4;
+    border: 2px solid #00A6C4;
+}
+
+.group-label a:hover {
+    background-color: #00A6C4;
+    color: white;
+    border: 2px solid white;
 }
 
 .quarter { /* section */
@@ -225,6 +232,12 @@ section a {
     color: white;
     background-color: #00A6C4;
     border-radius: 10px;
+}
+
+article a:hover {
+    background-color: white;
+    color: #00A6C4;
+    border: 2px solid #00A6C4;
 }
 
 @media screen and (max-width: 600px) {
