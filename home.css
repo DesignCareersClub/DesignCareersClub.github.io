@@ -56,7 +56,7 @@
   color: var(--white);
 }
 .home-banner img {
-  width: 30vw;
+  width: 35vw;
   box-shadow: 0 0 10px 0 var(--primary-darker);
 }
 .home-banner .callout-button {
