@@ -39,9 +39,9 @@
   margin-bottom: 50px;
 }
 .home-banner .banner-group .right {
-  width: 25vw;
+  width: 30vw;
   min-width: 400px;
-  margin-left: 50px;
+  margin-left: 100px;
   text-align: left;
 }
 .home-banner .banner-group .right .preheading {
@@ -56,7 +56,7 @@
   color: var(--white);
 }
 .home-banner img {
-  width: 35vw;
+  width: 28vw;
   box-shadow: 0 0 10px 0 var(--primary-darker);
 }
 .home-banner .callout-button {

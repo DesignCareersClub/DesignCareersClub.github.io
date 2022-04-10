@@ -63,8 +63,9 @@
 }
 
 .upcoming-image {
-    width: 33%;
+    width: 20%;
     height: 30%;
+    min-width: 240px;
     margin-right: 40px;
 }
 
@@ -264,14 +265,17 @@ article a:hover {
 
     #upcoming-meetings {
         margin: 75px auto;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
         display: block;
     }
 
     .upcoming-image {
-        width: 75%;
+        width: 80%;
         margin: auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-self: center;
     }
 
     .upcoming-meeting {
