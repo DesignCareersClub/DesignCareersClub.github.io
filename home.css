@@ -67,6 +67,11 @@
   background-color: var(--primary-darker);
 }
 
+.banner-btn-new {
+  margin-top: 20px;
+}
+
+
 @media screen and (max-width: 1000px) {
   .home-banner img {
     width: 35vw;
