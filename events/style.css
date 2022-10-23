@@ -63,7 +63,7 @@
 }
 
 .upcoming-image {
-    width: 50%;
+    width: 60%;
     height: 30%;
     min-width: 240px;
     margin-right: 40px;
@@ -76,12 +76,12 @@
 
 .upcoming-event-content {
     justify-content: space-between;
-    margin: 20px 0px 35px 0px;
+    margin: 20px 0px 25px 0px;
 }
 
 .upcoming-btns-text {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .upcoming-btns-text p {
@@ -272,7 +272,7 @@ article a:hover {
     }
 
     .upcoming-image {
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-bottom: 20px;
         display: flex;

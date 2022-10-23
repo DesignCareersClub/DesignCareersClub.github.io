@@ -56,7 +56,7 @@
   color: var(--white);
 }
 .home-banner img {
-  width: 25vw;
+  width: 30vw;
   box-shadow: 0 0 10px 0 var(--primary-darker);
 }
 .home-banner .callout-button {
@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 1000px) {
   .home-banner img {
-    width: 35vw;
+    width: 40vw;
   }
   .home-banner .banner-group .right {
     min-width: 300px;
